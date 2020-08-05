@@ -30,7 +30,7 @@ public class IsGraphBipartite {
             for (int to : graph[from]) {
                 if (color[to] == color[from]) return false;
                 if (color[to] == -1) {
-                    color[to] = 1 - color[from]; // Trick!!
+                    color[to] = 1 - color[from]; // Handle opposite colors
                     queue.offer(to);
                 }
             }

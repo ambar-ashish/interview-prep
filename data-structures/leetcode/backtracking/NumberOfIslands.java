@@ -105,7 +105,6 @@ public class NumberOfIslands {
                          {'0','0','0','0','0'}};
 
         NumberOfIslands numberOfIslands = new NumberOfIslands();
-        System.out.println(numberOfIslands.numIslandsUsingDFS(grid));
-        //Output - 1
+        System.out.println(numberOfIslands.numIslandsUsingDFS(grid));//1
     }
 }

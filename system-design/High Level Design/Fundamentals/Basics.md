@@ -52,7 +52,7 @@ When a client tries to connect with server using TCP then it first it tries to c
 HTTP: introduces the idea of client-server communication using request-response protocol.
 This protocol helps us create robust and maintainable systems.
 
-#Storage
+# Storage
 
 Databases - programs that either use disk or memory to do 2 things : record data and query data
 

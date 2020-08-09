@@ -6,7 +6,7 @@ Its often used by load balancers to ditribute traffic to servers; it minimizes t
 to different servers when new servers are added or when existing servers are brought down.
 
 SHA: Secure Hash algorithms
-collection cryptographic hashfunctions used in the industry. SHA-3 popular nowadays.
+collection cryptographic hash functions used in the industry. SHA-3 popular nowadays.
 
   
 

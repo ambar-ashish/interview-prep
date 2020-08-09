@@ -137,7 +137,34 @@ a. the Map step which runs a map function on various chunks of dataset and trans
 b. the Shuffle step re-organizes the intermediate key-value pairs such that the pairs of the same key are routed to the same machine in the final step.
 c. the Reduce step, which runs a reduce function on the newly shuffled key-value pairs and transforms them into more meaningful data.
 
-        
+Replication:
+The act of duplicating the data from one database server to others. 
+
+Sharding:
+Sometimes called data partitioning, sharding is the act of splitting a database into two or more pieces called shards
+and is typically done to increase the throughput of your database. Popular sharding strategies include:
+a. Sharding based on a client's region
+b. Sharding based on the type of data(eg. user data gets stored in one shard, payments data gets stored in another shard)
+c. Sharding based on the hash of a column(only for structured data)
+
+Example:
+Lets say you have a sharded database and you want equal probability of request goings to these shards.
+So what we you can do is have a reverse proxy in between application server and these shards. And the application servers acts as
+a client which will connect to this reverse proxy and this reverse proxy will have the hashing logic of sending the request to these shards.
+
+Hot spot:
+When distributing a workload across a set of servers, that workload might be spread unevenly. This can happen if your sharding key
+or your hashing function are suboptimal, or if your workload is naturally skewed: some servers will receive a lot more traffic than
+others thus creating a hot spot.
+
+Leader Election:
+The process by which nodes in a cluster(for instance, servers in a set of servers) elect a so-called "leader" them, responsible
+for the primary operations of the service that these node support. When correctly implemented, leader election guarantees that all
+nodes in the cluster know which one is the leader at any given time and can elect a new leader if the leader dies for whatever reason.
+
+Consensus Algorithm:
+A type of complex algos used to have multiple entities agree on a single data value, like who the "leader" is amongst a group of
+machines. Two popular consensus algorithms are Paxos and Raft.            
 
   
 

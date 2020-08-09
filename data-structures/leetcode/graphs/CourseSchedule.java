@@ -40,3 +40,6 @@ public class CourseSchedule {
         return count == numCourses;
     }
 }
+
+//Time Complexity : O(V+E) where V is the no of courses and E is the no of dependencies
+//Space Complexity : O(V+E)

@@ -27,8 +27,8 @@ public class CloneGraph {
         }
     }
 
-    //Time Complexity - O(N)
-    //Space Complexity - O(N)
+    //Time Complexity - O(N) since we process each node exactly once
+    //Space Complexity - O(N) -> Actually O(N) spcace occupied by Map + O(W) where W is the width of the graph created using BFD
     public Node cloneGraph(Node node) {
         if(node == null){
             return null;

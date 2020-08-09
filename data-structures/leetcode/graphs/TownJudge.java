@@ -1,5 +1,6 @@
 package graphs;
 
+//LC-997
 public class TownJudge {
 
     public int findJudge(int N, int[][] trust) {
@@ -23,3 +24,6 @@ public class TownJudge {
         return -1;
     }
 }
+// Let N be the no of people and E be the no of edges(trust relationships)
+//Time Complexity - O(E), since we loop over the trust list once. The cost of doing this is O(E)
+//Space Complexity - O(N), 2 arrays with same length

@@ -38,3 +38,7 @@ public class IsGraphBipartite {
         return true;
     }
 }
+
+//Time Complexity: O(V+E), where E is the number of edges in the input array and V is the number of nodes in the graph.
+// We have to go through all the edges to build the adj graph and then possibly color each node to verify bipartite property.
+//Space Complexity: O(V), space used to store the color

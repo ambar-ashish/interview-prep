@@ -11,6 +11,14 @@ This makes horizontal partitioning a logical choice.
 
 With sharding, both read and write performance goes up if implemented properly.
 
+Sharding is of 2 types: Algorithm based and User Defined Sharding(preferred).
+
+**Sharding approach based on application**
+1. Sharding by Customer, Tenant(Multi-tenant application)
+2. Sharding by location
+3. Sharding based on Time(Ex: Railway reservation system)
+
+
 Example:
 
 We can partition the database using the userId/requestId of the user. We can have 7 partitions from userID from A-D, then E-F.. and so on.

@@ -7,7 +7,7 @@ It can be use for the following:
 3. Publisher-Subscriber based messaging
 4. Process information very quickly(like leaderboard)
 
-Redis is much faster then database since it stored the data in memory where as DB stores in hard-drives.
+Redis is much faster than database since it stored the data in memory where as DB stores in hard-drives.
 
 Redis is a No-SQL db
 Uses data structures to store data

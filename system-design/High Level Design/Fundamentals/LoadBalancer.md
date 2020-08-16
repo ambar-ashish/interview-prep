@@ -12,6 +12,7 @@ LBs can store IPs and port ranges mapping with backend server to store which req
 
 
 **2. What is reverse proxy?**
+
 A reverse proxy is a server that sits in front of web servers and forwards client (e.g. web browser) requests to those web servers. 
 Reverse proxies are typically implemented to help increase security, performance, and reliability. 
 
@@ -35,6 +36,7 @@ This can help in increase cache hit as we can use the same has to select the cac
 f. Using Consistent Hashing - Use requestID from client request and hash this value, then this hash value can be mapped to particular servers.
  
 **5. How to make sure that LB is not single point of failure and scale load balancers?**
+
 Have multiple replicas of LB which can be mapped with DNS so that any user who types google.com, 
 then the DNS query hits either of the Load balancer IPs.
 
@@ -43,6 +45,7 @@ then the DNS query hits either of the Load balancer IPs.
 **Load Balancers Layer4 vs Layer 7**
 
 **NGINX**
+
 NginX is an open source web server written in C and can also be used as a reverse proxy and a load balancer.
 Can be used as:
 1. Load Balancing

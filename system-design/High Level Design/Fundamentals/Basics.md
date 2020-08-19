@@ -166,8 +166,20 @@ Consensus Algorithm:
 A type of complex algos used to have multiple entities agree on a single data value, like who the "leader" is amongst a group of
 machines. Two popular consensus algorithms are Paxos and Raft.            
 
+**DDoS Attack**
+
+A distributed denial-of-service (DDoS) attack is a malicious attempt to disrupt normal traffic of a targeted server, 
+service or network by overwhelming the target or its surrounding infrastructure with a flood of Internet traffic. 
+DDoS attacks achieve effectiveness by utilizing multiple compromised computer systems as sources of attack traffic.
+Sometimes referred to as a layer 7 DDoS attack (in reference to the 7th layer of the OSI model), the goal of these attacks is to exhaust the resources of the target.
   
+**XSS Attack**
 
+Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. 
+XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user.
+Flaws that allow these attacks to succeed are quite widespread and occur anywhere a web application uses input from a user within the output it generates without validating or encoding it.
 
-
+The actual attack occurs when the victim visits the web page or web application that executes the malicious code.
+The web page or web application becomes a vehicle to deliver the malicious script to the user’s browser. 
+Vulnerable vehicles that are commonly used for Cross-site Scripting attacks are forums, message boards, and web pages that allow comments.
 

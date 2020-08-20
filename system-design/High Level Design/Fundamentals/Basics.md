@@ -183,3 +183,22 @@ The actual attack occurs when the victim visits the web page or web application 
 The web page or web application becomes a vehicle to deliver the malicious script to the user’s browser. 
 Vulnerable vehicles that are commonly used for Cross-site Scripting attacks are forums, message boards, and web pages that allow comments.
 
+**How master-slave architecture works**
+
+Master-Slave can be synchronous and asynchronous communication.
+If asynchronous, then less load on master to sync everytime but then master slave will take time to be in sync.
+If synchronous, then more load on master as it need to update slave everytime.
+
+Master-Master looks good and resilient but it can go wrong if their communication is down and hence will start behaving independently.
+Hence, we need more masters in the system and hence distributed consensus will come into picture.
+Many types of distributed consensus are there:
+1. 2 phase commit [Understand this protocol as it will make sure master-slave are in sync]
+2. 3 phase commit
+3. MVCC
+
+Why is master-slave required?
+1. We get a backup of all the data
+2. Scale out your read operations, can run analytics engine on slaves(more slaves can be present)
+3. Use sharding to reduce the damage if once of the node fails(can have slaves for each shard)
+
+

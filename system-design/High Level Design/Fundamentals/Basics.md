@@ -18,6 +18,10 @@ How is IP address is assigned to any machine connected the internet?
 -->
 
 DNS:
+The process of DNS resolution involves converting a hostname (such as www.example.com) into a computer-friendly IP address (such as 192.168.1.1).
+An IP address is given to each device on the Internet, and that address is necessary to find the appropriate Internet device - like a street address is used to find a particular home. 
+When a user wants to load a webpage, a translation must occur between what a user types into their web browser (example.com) and the machine-friendly address necessary to locate the example.com webpage.
+
 HTTP:
 way to send info to server. It sends a bunch of bytes in packets. The request will contain the client IP address as well.
 The server then can use this client address to send back the response.
@@ -201,4 +205,29 @@ Why is master-slave required?
 2. Scale out your read operations, can run analytics engine on slaves(more slaves can be present)
 3. Use sharding to reduce the damage if once of the node fails(can have slaves for each shard)
 
+**How TCP handshake works?**
 
+THREE-WAY HANDSHAKE or a TCP 3-way handshake is a process which is used in a TCP/IP network to make a connection between the server and client.
+It is a three-step process that requires both the client and server to exchange synchronization and acknowledgment packets before the real data communication process starts.
+
+Three-way handshake process is designed in such a way that both ends help you to initiate, negotiate, and separate TCP socket connections at the same time. 
+It allows you to transfer multiple TCP socket connections in both directions at the same time.
+
+Step 1: In the first step, the client establishes a connection with a server. It sends a segment with SYN and informs the server about the client should start communication, and with what should be its sequence number.
+Step 2: In this step server responds to the client request with SYN-ACK signal set. ACK helps you to signify the response of segment that is received and SYN signifies what sequence number it should able to start with the segments.
+Step 3: In this final step, the client acknowledges the response of the Server, and they both create a stable connection will begin the actual data transfer process.
+
+**How SSL works?**
+
+SSL certificates are an essential component of the data encryption process that make internet transactions secure.
+They are digital passports that provide authentication to protect the confidentiality and integrity of website communication with browsers.
+
+The SSL certificate's job is to initiate secure sessions with the user’s browser via the secure sockets layer (SSL) protocol.
+This secure connection cannot be established without the SSL certificate, which digitally connects company information to a cryptographic key.
+
+Working:
+-A browser or server attempts to connect to a website (i.e. a web server) secured with SSL. The browser/server requests that the web server identify itself.
+-The web server sends the browser/server a copy of its SSL certificate.
+-The browser/server checks to see whether or not it trusts the SSL certificate. If so, it sends a message to the web server.
+-The web server sends back a digitally signed acknowledgement to start an SSL encrypted session.
+-Encrypted data is shared between the browser/server and the web server.

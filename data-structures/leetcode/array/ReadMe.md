@@ -2,11 +2,11 @@
 
 LC-42 Trapping Rain Water
 LC-4 Median of Two Sorted Arrays
-LC-53 Maximum Subarray
+LC-53 Maximum Subarray - done
 LC-15 3Sum
 LC-238 Product of Array Except Self
 LC-56 Merge Intervals
-LC-560 Subarray Sum Equals K
+LC-560 Subarray Sum Equals K - done
 LC-1249 Minimum Remove to Make Valid Parentheses
 LC-31 Next Permutation
 LC-54 Spiral Matrix

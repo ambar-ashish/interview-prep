@@ -18,3 +18,13 @@ public String removeVowels(String S) {
 **Replace all letters except a-z and A-Z**
 
 String normalizedStr = paragraph.replaceAll("[^a-zA-Z]", " ");
+
+**Understand Prefix Sum**
+
+**String methods**
+
+
+**StringBuffer methods**
+
+
+**Comparators**

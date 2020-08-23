@@ -28,3 +28,7 @@ String normalizedStr = paragraph.replaceAll("[^a-zA-Z]", " ");
 
 
 **Comparators**
+
+
+**Priority Queues**
+

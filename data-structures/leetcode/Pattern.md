@@ -1,0 +1,1 @@
+# Pattern for Data Structure Questions

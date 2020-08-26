@@ -8,6 +8,8 @@ import java.util.Queue;
 //LC-199
 public class BinaryTreeRightSideView {
 
+    //Time Complexity - O(N) where N is the total number of nodes
+    //Space Complexity - O(D) to keep the queues, where D is a tree diameter
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> out = new ArrayList();
         if(root == null){

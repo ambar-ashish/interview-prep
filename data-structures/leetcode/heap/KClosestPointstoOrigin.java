@@ -1,6 +1,5 @@
 package heap;
 
-import java.sql.Time;
 import java.util.PriorityQueue;
 
 //LC-973
@@ -8,6 +7,8 @@ public class KClosestPointstoOrigin {
 
     //Time Complexity: O(Nlogk)
     //Space Complexity: O(K)
+    //The advantage of this solution is it can deal with real-time(online) stream data.
+    //It does not have to know the size of the data previously.
     public int[][] kClosest(int[][] points, int K) {
         if(K>=points.length)
             return points;
@@ -24,7 +25,7 @@ public class KClosestPointstoOrigin {
         return result;
     }
 
-    private int getDistance(int [] point) {
+    private int getDistance(int[] point) {
         return point[0] * point[0] + point[1] * point[1];
     }
 

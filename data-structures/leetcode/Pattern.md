@@ -3,23 +3,24 @@
 **Things to work on**
 
 1. DP - do 2 questions each for 5 types
-2. Merge Sort, Heap Sort, Quick Sort, Quick Select
+2. Merge Sort, Heap Sort, Quick Sort
 3. Understand Decimal System, Binary, Hexadecimal
+4. QuickSelect - Find kth largest element in an array
+5. Top 5 Greedy Questions
 
 **Number**
 
-Add Binary
-Add Strings
+Add Binary - in progress
+Add Strings - in progress
 Multiply Strings
 Fraction to Recurring Decimal
 Convert a Number to Hexadecimal
-Number Complement
 Valid Number
 Intersection of Two Arrays
 
 **String**
 
-Verifying an Alien Dictionary
+Verifying an Alien Dictionary - done
 
 **Two pointers/Sliding window**
 
@@ -48,6 +49,8 @@ Pow(x, n)
 **Linked List**
 
 Merge k Sorted Lists
+Palindrome Linked List - 
+Odd even linked list
 Remove Nth Node From End of List
 
 **Trees**
@@ -62,8 +65,8 @@ Binary Tree Vertical Order Traversal
 
 **Backtracking**
 
-Number of Islands
-Flood Fill
+Number of Islands - done
+Flood Fill - done
 Rotting Oranges
 Word ladder
 Word Search
@@ -71,8 +74,9 @@ Shortest Bridge
 
 **Heap**
 
-K Closest Points to Origin
-Top K Frequent Elements
+K Closest Points to Origin - done but need to work on Quick Select solution
+Top K Frequent Elements - done
+Top K Frequent Words - done
 
 **Graphs**
 
@@ -85,7 +89,6 @@ Alien Dictionary
 Valid Palindrome - done
 Valid Palindrome II - done
 Valid Palindrome III - done suboptimally, need to understand and work on the DP solution
-Palindrome Linked List - 
 Longest Palindromic Substring - 
 
 **Intervals**
@@ -99,8 +102,9 @@ Employee Free Time
 
 **Trie**
 
-Add and Search Word - Data structure design
-Stream of Characters
+Implement Trie (Prefix Tree) - done
+Design Add and Search Words Data Structure - in progress
+Stream of Characters - in progress
 
 **Random**
 
@@ -110,5 +114,7 @@ Integer to English Words
 
 **Bit Manipulation**
 
-Number of 1 Bits
+Number of 1 Bits - in progress
+Number Complement - in progress
+Complement of Base 10 Integer
 

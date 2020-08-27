@@ -25,10 +25,21 @@ String normalizedStr = paragraph.replaceAll("[^a-zA-Z]", " ");
 String s = "TEST";
 s = s.toLowerCase(); 
 
+str1.compareTo(str2) - The method returns a negative number 
+when the string calling the method lexicographically comes first.
+
+So when you want a lexicographically ordered in priority queue(minHeap).
+PriorityQueue<String> minHeap = new PriorityQueue<>((a,b) -> b.compareTo(a));
+
+String reversedWord = new StringBuilder(word).reverse().toString();
+
 **StringBuffer methods**
 
 StringBuffer sb = new StringBuffer("test");
 sb.reverse();
+
+sb.insert(0,"A");//insert A at 0th position
+sb.append("A")
 
 **Comparators**
 
@@ -48,8 +59,32 @@ PriorityQueue<Integer> pQueue =  new PriorityQueue<Integer>(Collections.reverseO
 For int array:
 PriorityQueue<int[]> heap = new PriorityQueue<int[]>((o1,o2) -> o1[0] - o2[0]);
 
+Time Complexity of inserting and deleting and element is O(log n)
 
 **Character Methods**
 
 char c = 'a';
 Character.isLetterOrDigit(c)
+
+**Return empty int array**
+
+return new int[0];
+return new int[0][0];
+
+**Lists**
+
+Collections.reverse(list);
+
+**ASCII codes**
+
+0-9 -> 48-57
+A-Z -> 65-90
+a-z -> 97-122
+
+**HashMap**
+
+iteration over HashMap keys
+for(int i : map.keySet())
+
+iteration over HashMap values
+for(int i : map.keySet())

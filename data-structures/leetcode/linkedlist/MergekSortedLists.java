@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 public class MergekSortedLists {
 
     //Priority Queue approach
-    //Time Complexity - O(N*logk) where k is the number of linked lists
+    //Time Complexity - O(Nlogk) where k is the number of linked lists
     //Space Complexity - O(k)
     public ListNode mergeKListsUsingPriorityQueue(ListNode[] lists) {
         PriorityQueue<Integer> heap = new PriorityQueue();

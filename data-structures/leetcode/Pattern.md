@@ -21,6 +21,7 @@ Intersection of Two Arrays
 **String**
 
 Verifying an Alien Dictionary - done
+Find All Anagrams in a String
 
 **Two pointers/Sliding window**
 
@@ -48,14 +49,14 @@ Pow(x, n)
 
 **Linked List**
 
-Merge k Sorted Lists
+Merge k Sorted Lists - done
 Palindrome Linked List - 
 Odd even linked list
 Remove Nth Node From End of List
 
 **Trees**
 
-Binary Tree Right Side View
+Binary Tree Right Side View - done
 Kth Smallest Element in a BST
 Binary Tree Maximum Path Sum
 Diameter of Binary Tree
@@ -94,11 +95,11 @@ Longest Palindromic Substring -
 **Intervals**
 
 Meeting Rooms - done
-Meeting Rooms II
-Merge Intervals
-Insert Interval
-Interval List Intersections
-Employee Free Time
+Meeting Rooms II - done
+Merge Intervals - in progress
+Insert Interval - in progress
+Interval List Intersections - in progress
+Employee Free Time - in progress
 
 **Trie**
 
@@ -116,5 +117,5 @@ Integer to English Words
 
 Number of 1 Bits - in progress
 Number Complement - in progress
-Complement of Base 10 Integer
+Complement of Base 10 Integer -
 

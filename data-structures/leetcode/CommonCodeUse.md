@@ -75,6 +75,17 @@ return new int[0][0];
 
 Collections.reverse(list);
 
+**Array to List**
+
+String a[] = new String[] { "A", "B", "C", "D" }; 
+List<String> list = Arrays.asList(a); 
+Or List<String> list = Arrays.asList("A","B");
+
+**List to Array**
+
+List<int[]> result = new ArrayList<>();
+result.toArray(new int[result.size()][]);
+
 **ASCII codes**
 
 0-9 -> 48-57

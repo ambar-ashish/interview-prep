@@ -13,11 +13,11 @@ public class MeetingRoomsII {
 
         if (n <= 1) return n;
 
+        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+
         // heap size will denote rooms occupied
         // value in each node will be meeting's end time of a room
         PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
-
-        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
 
         // add first interval's end time in heap
         pq.add(intervals[0][1]);

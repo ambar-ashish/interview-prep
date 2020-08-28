@@ -16,24 +16,27 @@ Multiply Strings
 Fraction to Recurring Decimal
 Convert a Number to Hexadecimal
 Valid Number
-Intersection of Two Arrays
+
 
 **String**
 
 Verifying an Alien Dictionary - done
 Find All Anagrams in a String
+Group Anagrams
+Valid Anagram
 
 **Two pointers/Sliding window**
 
 Permutation in String
 
 **Array**
-Product of Array Except Self
-Find Peak Element
-Leftmost Column with at Least a One
-Rotate Array
-Find First and Last Position of Element in Sorted Array
-Squares of a Sorted Array
+Product of Array Except Self - in progress
+Find Peak Element - done but this can be optimized using binary search
+Leftmost Column with at Least a One - in progress
+Rotate Array - done but can be optimized
+Find First and Last Position of Element in Sorted Array - done but can be optimized
+Squares of a Sorted Array - done but can be optimized
+Intersection of Two Arrays - done but can be optimized
 
 **SubArray**
 Maximum Subarray
@@ -50,9 +53,9 @@ Pow(x, n)
 **Linked List**
 
 Merge k Sorted Lists - done
-Palindrome Linked List - 
+Palindrome Linked List - done but can be optimized
 Odd even linked list
-Remove Nth Node From End of List
+Remove Nth Node From End of List - in progress
 
 **Trees**
 
@@ -81,8 +84,8 @@ Top K Frequent Words - done
 
 **Graphs**
 
-Clone Graph
-Course Schedule
+Clone Graph - done
+Course Schedule 
 Alien Dictionary
 
 **Pallindromes**

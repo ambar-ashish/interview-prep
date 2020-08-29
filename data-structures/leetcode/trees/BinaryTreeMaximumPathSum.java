@@ -30,9 +30,12 @@ public class BinaryTreeMaximumPathSum {
 
         // returning the value if root was part of the answer
         return maxOneNodeRoot;
-
     }
 }
+
+//Time Complexity - O(N)
+//Space Complexity - O(H) where H is the tree height to keep the recursion stack. In average case of balanced trees,
+//the tree height H = logN, in worst case of skewed tree, H = N.
 
 //Source of the solution(very nicely explained)
 //https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/389609/Full-Explanation-article-with-pseudo-code-Beats-JAVA-100-time-and-100-space-Solution

@@ -17,7 +17,6 @@ Fraction to Recurring Decimal
 Convert a Number to Hexadecimal
 Valid Number
 
-
 **String**
 
 Verifying an Alien Dictionary - done
@@ -60,12 +59,12 @@ Remove Nth Node From End of List - in progress
 **Trees**
 
 Binary Tree Right Side View - done
-Kth Smallest Element in a BST
-Binary Tree Maximum Path Sum
-Diameter of Binary Tree
-Serialize and Deserialize Binary Tree
-Populating Next Right Pointers in Each Node II
-Binary Tree Vertical Order Traversal
+Kth Smallest Element in a BST - done but can be optimized
+Populating Next Right Pointers in Each Node II = done but can be optimized
+Binary Tree Maximum Path Sum - done
+Diameter of Binary Tree - done
+Serialize and Deserialize Binary Tree - in progress
+Binary Tree Vertical Order Traversal - in progress
 
 **Backtracking**
 

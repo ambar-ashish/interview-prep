@@ -46,3 +46,6 @@ public class SerializeandDeserializeBinaryTree {
         return root;
     }
 }
+
+//Using BFS, once the serialization is done then the output is  1 2 3 n n 4 5 n n n n
+//for a sample tree of level order traversed [1,2,3,null,null,4,5]

@@ -12,16 +12,16 @@
 
 Add Binary - in progress
 Add Strings - in progress
-Multiply Strings
-Fraction to Recurring Decimal
-Convert a Number to Hexadecimal
-Valid Number
+Multiply Strings - in progress
+Fraction to Recurring Decimal - need to understand
+Convert a Number to Hexadecimal - need to understand as its a bit operation  
+Valid Number - need to understand
 
 **String**
 
 Verifying an Alien Dictionary - done
 Find All Anagrams in a String
-Group Anagrams
+Group Anagrams - done
 Valid Anagram
 
 **Two pointers/Sliding window**
@@ -38,15 +38,15 @@ Squares of a Sorted Array - done but can be optimized
 Intersection of Two Arrays - done but can be optimized
 
 **SubArray**
-Maximum Subarray
-Subarray Sum Equals K
-Maximum Product Subarray 
-Minimum Size Subarray Sum
-Continuous Subarray Sum
+Maximum Subarray - in progress
+Subarray Sum Equals K - in progress
+Maximum Product Subarray - in progress
+Minimum Size Subarray Sum - need to work on it
+Continuous Subarray Sum - in progress
 
 **Binary Search**
 
-First Bad Version
+First Bad Version - in progress
 Pow(x, n)
 
 **Linked List**
@@ -111,9 +111,9 @@ Stream of Characters - in progress
 
 **Random**
 
-Integer to Roman
-Roman to Integer
-Integer to English Words
+Integer to Roman - in progress
+Roman to Integer - in progress
+Integer to English Words - in progress
 
 **Bit Manipulation**
 

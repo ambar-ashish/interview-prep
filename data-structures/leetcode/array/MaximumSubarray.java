@@ -4,6 +4,8 @@ package array;
 public class MaximumSubarray {
 
     //Greedy Approach
+    //Time Complexity - O(N)
+    //Space Complexity - O(1)
     public int maxSubArray(int[] nums) {
         int n = nums.length;
         int currSum = nums[0], maxSum = nums[0];
@@ -16,6 +18,8 @@ public class MaximumSubarray {
     }
 
     //Kadane's algo
+    //Time Complexity - O(N)
+    //Space Complexity - O(1)
     public int maxSubArrayUsingDP(int[] nums) {
         int n = nums.length, maxSum = nums[0];
         for(int i = 1; i < n; ++i) {

@@ -1,5 +1,192 @@
 # Pattern for Data Structure Questions
 
+**Number**
+
+Easy - Add Binary - in progress
+Easy - Add Strings - in progress
+Easy - Multiply Strings - in progress
+Easy - Convert a Number to Hexadecimal - need to understand as its a bit operation
+Medium - Fraction to Recurring Decimal - need to understand
+Hard - Valid Number - need to understand
+
+**String**
+
+Easy - Verifying an Alien Dictionary - done
+Easy - Find All Anagrams in a String - done
+Easy - Group Anagrams - done
+Easy - Valid Anagram - done
+Easy - Reorder Data in Log Files
+Easy - Read N Characters Given Read4 - in progress
+Medium - Read N Characters Given Read4 II - Call multiple times - in progress
+Medium - Group Shifted Strings - in progress
+Medium - String to Integer (atoi)
+Medium - One Edit Distance
+Medium - Validate IP Address
+Medium - Minimum Remove to Make Valid Parentheses
+Medium - Basic Calculator II
+
+**Two pointers/Sliding window**
+
+Easy - Remove Duplicates from Sorted Array - in progress
+Easy - Move Zeroes - done
+Medium - Longest Substring Without Repeating Characters - done
+Medium - Permutation in String - done
+Hard - Longest Substring with At Most K Distinct Characters
+Hard - Minimum Window Substring
+Hard - Trapping Rain Water
+
+**Array**
+Easy - Product of Array Except Self - in progress
+Easy - Find Peak Element - done but this can be optimized using binary search
+Easy - Leftmost Column with at Least a One - in progress
+Easy - Rotate Array - done but can be optimized
+Easy - Find First and Last Position of Element in Sorted Array - done but can be optimized
+Easy - Squares of a Sorted Array - done but can be optimized
+Easy - Intersection of Two Arrays - done but can be optimized
+Easy - Merge Sorted Array
+Easy - Monotonic Array - done
+Easy - Two Sum
+Medium - 3Sum
+Medium - Intersection of Two Arrays II - done
+Medium - Sparse Matrix Multiplication 
+Medium - Maximum Swap
+Medium - Missing Element in Sorted Array
+Medium - Random Pick Index
+Hard - Median of Two Sorted Arrays
+
+**SubArray**
+Easy - Maximum Subarray - in progress
+Easy - Subarray Sum Equals K - in progress
+Easy - Maximum Product Subarray - in progress
+Easy - Minimum Size Subarray Sum - need to work on it
+Easy - Continuous Subarray Sum - in progress
+
+**Binary Search**
+
+Easy - First Bad Version - in progress
+Easy - Search in Rotated Sorted Array
+Medium - Pow(x, n) 
+Medium -Divide Two Integers
+
+**Linked List**
+
+Medium - Merge k Sorted Lists - done
+Medium - Palindrome Linked List - done but can be optimized
+Medium - Odd even linked list
+Medium - Remove Nth Node From End of List - in progress
+Medium - Add Two Numbers - done 
+Medium - Merge Two Sorted Lists - done
+Medium - Copy List with Random Pointer
+Medium - Reorder List
+
+**Stack/Queue**
+
+Medium - Exclusive Time of Functions
+
+**Trees**
+
+Easy - Binary Tree Right Side View - done
+Easy - Kth Smallest Element in a BST - done but can be optimized
+Easy - Populating Next Right Pointers in Each Node II - done but can be optimized
+Easy - Diameter of Binary Tree - done
+Easy - Lowest Common Ancestor of a Binary Tree
+Medium - Binary Tree Maximum Path Sum - done
+Medium - Serialize and Deserialize Binary Tree - in progress
+Medium - Binary Tree Vertical Order Traversal - in progress
+Medium - Binary Search Tree Iterator
+Medium - Range Sum of BST
+Medium - Maximum Difference Between Node and Ancestor
+Medium - Validate Binary Search Tree
+Medium - Flatten Binary Tree to Linked List
+Medium - Binary Tree Paths
+Medium - Convert Binary Search Tree to Sorted Doubly Linked List
+
+**Backtracking**
+
+Easy - Number of Islands - done
+Easy - Flood Fill - done
+Easy - Rotting Oranges
+Easy - Word ladder
+Easy - Word Search - done
+Medium - Letter Combinations of a Phone Number
+Medium - Permutations
+Medium - Permutations II
+Medium - Shortest Bridge
+Medium - Subsets
+Medium - Strobogrammatic Number II
+Medium - Accounts Merge
+Medium - Nested List Weight Sum
+Hard - Remove Invalid Parentheses
+Hard - Expression Add Operators
+Hard - Shortest Distance from All Buildings
+Hard - Regular Expression Matching
+
+
+**Heap**
+
+Easy - K Closest Points to Origin - done but need to work on Quick Select solution
+Easy - Top K Frequent Elements - done
+Easy - Top K Frequent Words - done
+Easy - Kth Largest Element in an Array - done but can be optimized
+
+**Graphs**
+
+Easy - Clone Graph - done
+Easy - Is Graph Bipartite?
+Medium - Course Schedule 
+Hard - Alien Dictionary
+
+**Pallindromes**
+
+Easy - Valid Palindrome - done
+Easy - Valid Palindrome II - done
+Medium - Valid Palindrome III - done suboptimally, need to understand and work on the DP solution
+Medium - Longest Palindromic Substring - 
+
+**Intervals**
+
+Easy - Meeting Rooms - done
+Medium - Meeting Rooms II - done
+Medium - Merge Intervals - in progress
+Medium - Interval List Intersections - in progress
+Hard - Insert Interval - in progress
+Hard - Employee Free Time - in progress
+
+**Trie**
+
+Medium - Implement Trie (Prefix Tree) - done
+Medium - Design Add and Search Words Data Structure - in progress
+Medium - Stream of Characters - in progress
+
+**Random**
+
+Easy - Integer to Roman - in progress
+Easy - Roman to Integer - in progress
+Hard - Integer to English Words - in progress
+Random Pick with Weight
+
+**Bit Manipulation**
+
+Easy - Number of 1 Bits - in progress
+Easy - Number Complement - in progress
+Easy - Complement of Base 10 Integer - 
+
+**Dynamic Programming**
+
+Easy - Best Time to Buy and Sell Stock
+Medium - Longest Palindromic Substring
+Hard - Longest Valid Parentheses
+Medium - Decode Ways
+Medium - Word Break
+Medium - Range Sum Query 2D - Immutable
+Hard - Maximum Sum of 3 Non-Overlapping Subarrays
+
+**Design**
+
+Medium - LRU Cache
+Medium - Design HashMap
+Medium - Insert Delete GetRandom O(1)
+
 **Things to work on**
 
 1. DP - do 2 questions each for 5 types
@@ -7,191 +194,5 @@
 3. Understand Decimal System, Binary, Hexadecimal
 4. QuickSelect - Find kth largest element in an array
 5. Top 5 Greedy Questions
-
-**Number**
-
-Add Binary - in progress
-Add Strings - in progress
-Multiply Strings - in progress
-Fraction to Recurring Decimal - need to understand
-Convert a Number to Hexadecimal - need to understand as its a bit operation  
-Valid Number - need to understand
-
-**String**
-
-Verifying an Alien Dictionary - done
-Find All Anagrams in a String - done
-Group Anagrams - done
-Valid Anagram - done
-Minimum Remove to Make Valid Parentheses
-Basic Calculator II
-Read N Characters Given Read4 - in progress
-Read N Characters Given Read4 II - Call multiple times - in progress
-Group Shifted Strings - in progress
-String to Integer (atoi)
-One Edit Distance
-Longest Substring with At Most K Distinct Characters
-Validate IP Address
-Reorder Data in Log Files
-
-**Two pointers/Sliding window**
-
-Remove Duplicates from Sorted Array - in progress
-Move Zeroes - done - easy
-Longest Substring Without Repeating Characters - done - medium
-Permutation in String - done - medium
-Longest Substring with At Most K Distinct Characters - hard
-Minimum Window Substring - hard
-Trapping Rain Water - hard
-
-**Array**
-Product of Array Except Self - in progress
-Find Peak Element - done but this can be optimized using binary search
-Leftmost Column with at Least a One - in progress
-Rotate Array - done but can be optimized
-Find First and Last Position of Element in Sorted Array - done but can be optimized
-Squares of a Sorted Array - done but can be optimized
-Intersection of Two Arrays - done but can be optimized
-Intersection of Two Arrays II - done - medium
-Merge Sorted Array
-Sparse Matrix Multiplication 
-Maximum Swap
-Missing Element in Sorted Array
-Random Pick Index
-Monotonic Array - done
-3Sum
-Median of Two Sorted Arrays
-
-**SubArray**
-Maximum Subarray - in progress
-Subarray Sum Equals K - in progress
-Maximum Product Subarray - in progress
-Minimum Size Subarray Sum - need to work on it
-Continuous Subarray Sum - in progress
-
-**Binary Search**
-
-First Bad Version - in progress
-Pow(x, n) 
-Divide Two Integers
-Search in Rotated Sorted Array
-
-**Linked List**
-
-Merge k Sorted Lists - done
-Palindrome Linked List - done but can be optimized
-Odd even linked list
-Remove Nth Node From End of List - in progress
-Add Two Numbers - done 
-Merge Two Sorted Lists - done
-Copy List with Random Pointer
-Reorder List
-
-**Stack/Queue**
-
-Exclusive Time of Functions
-
-**Trees**
-
-Binary Tree Right Side View - done
-Kth Smallest Element in a BST - done but can be optimized
-Populating Next Right Pointers in Each Node II - done but can be optimized
-Binary Tree Maximum Path Sum - done
-Diameter of Binary Tree - done
-Serialize and Deserialize Binary Tree - in progress
-Binary Tree Vertical Order Traversal - in progress
-Binary Search Tree Iterator
-Range Sum of BST
-Maximum Difference Between Node and Ancestor
-Validate Binary Search Tree
-Flatten Binary Tree to Linked List
-Lowest Common Ancestor of a Binary Tree
-Binary Tree Paths
-Convert Binary Search Tree to Sorted Doubly Linked List
-
-**Backtracking**
-
-Letter Combinations of a Phone Number
-Permutations
-Permutations II
-Number of Islands - done
-Flood Fill - done
-Rotting Oranges
-Word ladder
-Word Search - done
-Shortest Bridge
-Remove Invalid Parentheses
-Expression Add Operators
-Accounts Merge
-Nested List Weight Sum
-Shortest Distance from All Buildings
-Regular Expression Matching
-Subsets
-Strobogrammatic Number II
-
-**Heap**
-
-K Closest Points to Origin - done but need to work on Quick Select solution
-Top K Frequent Elements - done
-Top K Frequent Words - done
-Kth Largest Element in an Array - done but can be optimized
-
-**Graphs**
-
-Clone Graph - done
-Is Graph Bipartite?
-Course Schedule 
-Alien Dictionary
-
-**Pallindromes**
-
-Valid Palindrome - done
-Valid Palindrome II - done
-Valid Palindrome III - done suboptimally, need to understand and work on the DP solution
-Longest Palindromic Substring - 
-
-**Intervals**
-
-Meeting Rooms - done
-Meeting Rooms II - done
-Merge Intervals - in progress
-Insert Interval - in progress
-Interval List Intersections - in progress
-Employee Free Time - in progress
-
-**Trie**
-
-Implement Trie (Prefix Tree) - done
-Design Add and Search Words Data Structure - in progress
-Stream of Characters - in progress
-
-**Random**
-
-Integer to Roman - in progress
-Roman to Integer - in progress
-Integer to English Words - in progress
-Random Pick with Weight
-
-**Bit Manipulation**
-
-Number of 1 Bits - in progress
-Number Complement - in progress
-Complement of Base 10 Integer - 
-
-**Dynamic Programming**
-
-Longest Palindromic Substring
-Longest Valid Parentheses
-Decode Ways
-Best Time to Buy and Sell Stock
-Word Break
-Range Sum Query 2D - Immutable
-Maximum Sum of 3 Non-Overlapping Subarrays
-
-**Design**
-
-LRU Cache
-Design HashMap
-Insert Delete GetRandom O(1)
 
 

@@ -20,15 +20,14 @@ Valid Number - need to understand
 **String**
 
 Verifying an Alien Dictionary - done
-Find All Anagrams in a String 
+Find All Anagrams in a String - done
 Group Anagrams - done
 Valid Anagram - done
 Minimum Remove to Make Valid Parentheses
 Basic Calculator II
-Read N Characters Given Read4
-Read N Characters Given Read4 II - Call multiple times
-Group Shifted Strings
-Longest Substring Without Repeating Characters
+Read N Characters Given Read4 - in progress
+Read N Characters Given Read4 II - Call multiple times - in progress
+Group Shifted Strings - in progress
 String to Integer (atoi)
 One Edit Distance
 Longest Substring with At Most K Distinct Characters
@@ -37,10 +36,13 @@ Reorder Data in Log Files
 
 **Two pointers/Sliding window**
 
-Permutation in String
-Longest Substring with At Most K Distinct Characters
-Minimum Window Substring
-Trapping Rain Water
+Remove Duplicates from Sorted Array - in progress
+Move Zeroes - done - easy
+Longest Substring Without Repeating Characters - done - medium
+Permutation in String - done - medium
+Longest Substring with At Most K Distinct Characters - hard
+Minimum Window Substring - hard
+Trapping Rain Water - hard
 
 **Array**
 Product of Array Except Self - in progress
@@ -50,16 +52,14 @@ Rotate Array - done but can be optimized
 Find First and Last Position of Element in Sorted Array - done but can be optimized
 Squares of a Sorted Array - done but can be optimized
 Intersection of Two Arrays - done but can be optimized
-Intersection of Two Arrays II
+Intersection of Two Arrays II - done - medium
 Merge Sorted Array
 Sparse Matrix Multiplication 
 Maximum Swap
 Missing Element in Sorted Array
 Random Pick Index
-Monotonic Array
-Remove Duplicates from Sorted Array
+Monotonic Array - done
 3Sum
-Move Zeroes
 Median of Two Sorted Arrays
 
 **SubArray**
@@ -72,7 +72,7 @@ Continuous Subarray Sum - in progress
 **Binary Search**
 
 First Bad Version - in progress
-Pow(x, n)
+Pow(x, n) 
 Divide Two Integers
 Search in Rotated Sorted Array
 
@@ -82,8 +82,8 @@ Merge k Sorted Lists - done
 Palindrome Linked List - done but can be optimized
 Odd even linked list
 Remove Nth Node From End of List - in progress
-Add Two Numbers
-Merge Two Sorted Lists
+Add Two Numbers - done 
+Merge Two Sorted Lists - done
 Copy List with Random Pointer
 Reorder List
 
@@ -95,7 +95,7 @@ Exclusive Time of Functions
 
 Binary Tree Right Side View - done
 Kth Smallest Element in a BST - done but can be optimized
-Populating Next Right Pointers in Each Node II = done but can be optimized
+Populating Next Right Pointers in Each Node II - done but can be optimized
 Binary Tree Maximum Path Sum - done
 Diameter of Binary Tree - done
 Serialize and Deserialize Binary Tree - in progress
@@ -118,7 +118,7 @@ Number of Islands - done
 Flood Fill - done
 Rotting Oranges
 Word ladder
-Word Search
+Word Search - done
 Shortest Bridge
 Remove Invalid Parentheses
 Expression Add Operators
@@ -134,7 +134,7 @@ Strobogrammatic Number II
 K Closest Points to Origin - done but need to work on Quick Select solution
 Top K Frequent Elements - done
 Top K Frequent Words - done
-Kth Largest Element in an Array
+Kth Largest Element in an Array - done but can be optimized
 
 **Graphs**
 
@@ -192,5 +192,6 @@ Maximum Sum of 3 Non-Overlapping Subarrays
 
 LRU Cache
 Design HashMap
+Insert Delete GetRandom O(1)
 
 

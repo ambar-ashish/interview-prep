@@ -39,7 +39,7 @@ StringBuffer sb = new StringBuffer("test");
 sb.reverse();
 
 sb.insert(0,"A");//insert A at 0th position
-sb.append("A")
+sb.append("A");//insert at last
 
 **Comparators**
 
@@ -74,6 +74,9 @@ return new int[0][0];
 **Lists**
 
 Collections.reverse(list);
+
+Map<String, List<String>> map = new HashMap<>();
+return new ArrayList<>(map.values());
 
 **Array to List**
 

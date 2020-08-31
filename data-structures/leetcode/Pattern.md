@@ -2,20 +2,21 @@
 
 **Number**
 
-Easy - Add Binary - in progress
-Easy - Add Strings - in progress
+Easy - Add Binary - done
+Easy - Add Strings - done
 Easy - Multiply Strings - in progress
-Easy - Convert a Number to Hexadecimal - need to understand as its a bit operation
-Medium - Fraction to Recurring Decimal - need to understand
+Easy - Convert a Number to Hexadecimal - in progress
+Medium - Fraction to Recurring Decimal - in progress
 Hard - Valid Number - need to understand
 
 **String**
 
-Easy - Verifying an Alien Dictionary - done
-Easy - Find All Anagrams in a String - done
-Easy - Group Anagrams - done
 Easy - Valid Anagram - done
-Easy - Reorder Data in Log Files
+Easy - Group Anagrams - done
+Easy - Find All Anagrams in a String - done
+Easy - Verifying an Alien Dictionary - done
+Easy - Reorder Data in Log Files - in progress
+Easy - Buddy Strings
 Easy - Read N Characters Given Read4 - in progress
 Medium - Read N Characters Given Read4 II - Call multiple times - in progress
 Medium - Group Shifted Strings - in progress
@@ -23,7 +24,15 @@ Medium - String to Integer (atoi)
 Medium - One Edit Distance
 Medium - Validate IP Address
 Medium - Minimum Remove to Make Valid Parentheses
+Medium - Custom Sort String
 Medium - Basic Calculator II
+
+**Pallindromes**
+
+Easy - Valid Palindrome - done
+Easy - Valid Palindrome II - done
+Medium - Valid Palindrome III - done sub-optimally, need to understand and work on the DP solution
+Medium - Longest Palindromic Substring - in progress
 
 **Two pointers/Sliding window**
 
@@ -36,6 +45,7 @@ Hard - Minimum Window Substring
 Hard - Trapping Rain Water
 
 **Array**
+
 Easy - Product of Array Except Self - in progress
 Easy - Find Peak Element - done but this can be optimized using binary search
 Easy - Leftmost Column with at Least a One - in progress
@@ -52,21 +62,23 @@ Medium - Sparse Matrix Multiplication
 Medium - Maximum Swap
 Medium - Missing Element in Sorted Array
 Medium - Random Pick Index
+Medium - Task Scheduler
 Hard - Median of Two Sorted Arrays
 
 **SubArray**
 Easy - Maximum Subarray - in progress
-Easy - Subarray Sum Equals K - in progress
-Easy - Maximum Product Subarray - in progress
-Easy - Minimum Size Subarray Sum - need to work on it
-Easy - Continuous Subarray Sum - in progress
+Medium - Maximum Product Subarray - in progress
+Medium - Subarray Sum Equals K - in progress
+Medium - Continuous Subarray Sum - in progress
+Medium - Minimum Size Subarray Sum - need to work on it
 
 **Binary Search**
 
 Easy - First Bad Version - in progress
 Easy - Search in Rotated Sorted Array
+Medium - Search in Rotated Sorted Array II
 Medium - Pow(x, n) 
-Medium -Divide Two Integers
+Medium - Divide Two Integers
 
 **Linked List**
 
@@ -85,6 +97,7 @@ Medium - Exclusive Time of Functions
 
 **Trees**
 
+Easy - Closest Binary Search Tree Value
 Easy - Binary Tree Right Side View - done
 Easy - Kth Smallest Element in a BST - done but can be optimized
 Easy - Populating Next Right Pointers in Each Node II - done but can be optimized
@@ -100,14 +113,15 @@ Medium - Validate Binary Search Tree
 Medium - Flatten Binary Tree to Linked List
 Medium - Binary Tree Paths
 Medium - Convert Binary Search Tree to Sorted Doubly Linked List
+Medium - Smallest Subtree with all the Deepest Nodes
 
 **Backtracking**
 
 Easy - Number of Islands - done
 Easy - Flood Fill - done
-Easy - Rotting Oranges
-Easy - Word ladder
 Easy - Word Search - done
+Easy - Rotting Oranges - done
+Easy - Word ladder - in progress
 Medium - Letter Combinations of a Phone Number
 Medium - Permutations
 Medium - Permutations II
@@ -120,7 +134,7 @@ Hard - Remove Invalid Parentheses
 Hard - Expression Add Operators
 Hard - Shortest Distance from All Buildings
 Hard - Regular Expression Matching
-
+Hard - Longest Increasing Path in a Matrix
 
 **Heap**
 
@@ -133,15 +147,9 @@ Easy - Kth Largest Element in an Array - done but can be optimized
 
 Easy - Clone Graph - done
 Easy - Is Graph Bipartite?
+Medium - Number of Connected Components in an Undirected Graph
 Medium - Course Schedule 
 Hard - Alien Dictionary
-
-**Pallindromes**
-
-Easy - Valid Palindrome - done
-Easy - Valid Palindrome II - done
-Medium - Valid Palindrome III - done suboptimally, need to understand and work on the DP solution
-Medium - Longest Palindromic Substring - 
 
 **Intervals**
 
@@ -175,11 +183,12 @@ Easy - Complement of Base 10 Integer -
 
 Easy - Best Time to Buy and Sell Stock
 Medium - Longest Palindromic Substring
-Hard - Longest Valid Parentheses
+Medium - Partition Equal Subset Sum
 Medium - Decode Ways
 Medium - Word Break
 Medium - Range Sum Query 2D - Immutable
 Hard - Maximum Sum of 3 Non-Overlapping Subarrays
+Hard - Longest Valid Parentheses
 
 **Design**
 
@@ -194,5 +203,11 @@ Medium - Insert Delete GetRandom O(1)
 3. Understand Decimal System, Binary, Hexadecimal
 4. QuickSelect - Find kth largest element in an array
 5. Top 5 Greedy Questions
+
+**Greedy Problems**
+
+Gas Station
+Maximum Subarray
+Super Washing Machines
 
 

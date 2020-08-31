@@ -20,8 +20,10 @@ public class WordLadder {
                     for (char c = 'a'; c <= 'z'; c++) {//modifying and verifying one letter at a time
                         current[j] = c;
                         String next = new String(current);
-                        if (set.contains(next)) {//verifying anf updating our set
-                            if (next.equals(endWord)) return count + 1;
+                        if (set.contains(next)) {//verifying and updating our set
+                            if (next.equals(endWord)) {
+                                return count + 1;
+                            }
                             queue.add(next);
                             set.remove(next);
                         }

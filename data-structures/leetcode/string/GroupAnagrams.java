@@ -18,14 +18,8 @@ public class GroupAnagrams {
             if(!map.containsKey(ordered)){
                 map.put(ordered, new ArrayList());
             }
-            List<String> temp = map.get(ordered);
-            temp.add(s);
-            map.put(ordered, temp);
+            map.get(ordered).add(s);
         }
-        List<List<String>> out = new ArrayList();
-        for(List<String> list : map.values()){
-            out.add(list);
-        }
-        return out;
+        return new ArrayList<>(map.values());
     }
 }

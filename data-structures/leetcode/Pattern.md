@@ -15,8 +15,8 @@ Easy - Valid Anagram - done
 Easy - Group Anagrams - done
 Easy - Find All Anagrams in a String - done
 Easy - Verifying an Alien Dictionary - done
-Easy - Reorder Data in Log Files - in progress
-Easy - Buddy Strings
+Easy - Reorder Data in Log Files - in progress - in progress
+Easy - Buddy Strings - in progress
 Easy - Read N Characters Given Read4 - in progress
 Medium - Read N Characters Given Read4 II - Call multiple times - in progress
 Medium - Group Shifted Strings - in progress
@@ -38,6 +38,7 @@ Medium - Longest Palindromic Substring - in progress
 
 Easy - Remove Duplicates from Sorted Array - in progress
 Easy - Move Zeroes - done
+Easy - Squares of a Sorted Array - done
 Medium - Longest Substring Without Repeating Characters - done
 Medium - Permutation in String - done
 Hard - Longest Substring with At Most K Distinct Characters
@@ -47,15 +48,14 @@ Hard - Trapping Rain Water
 **Array**
 
 Easy - Product of Array Except Self - in progress
-Easy - Find Peak Element - done but this can be optimized using binary search
-Easy - Leftmost Column with at Least a One - in progress
-Easy - Rotate Array - done but can be optimized
+Easy - Find Peak Element - done
+Easy - Leftmost Column with at Least a One - done
+Easy - Rotate Array - done
 Easy - Find First and Last Position of Element in Sorted Array - done but can be optimized
-Easy - Squares of a Sorted Array - done but can be optimized
-Easy - Intersection of Two Arrays - done but can be optimized
-Easy - Merge Sorted Array
+Easy - Intersection of Two Arrays - done
+Easy - Merge Sorted Array - in progress
 Easy - Monotonic Array - done
-Easy - Two Sum
+Easy - Two Sum - done
 Medium - 3Sum
 Medium - Intersection of Two Arrays II - done
 Medium - Sparse Matrix Multiplication 
@@ -74,9 +74,9 @@ Medium - Minimum Size Subarray Sum - need to work on it
 
 **Binary Search**
 
-Easy - First Bad Version - in progress
-Easy - Search in Rotated Sorted Array
-Medium - Search in Rotated Sorted Array II
+Easy - First Bad Version - done
+Easy - Search in Rotated Sorted Array - in progress
+Medium - Search in Rotated Sorted Array II - in progress
 Medium - Pow(x, n) 
 Medium - Divide Two Integers
 
@@ -97,12 +97,12 @@ Medium - Exclusive Time of Functions
 
 **Trees**
 
-Easy - Closest Binary Search Tree Value
+Easy - Closest Binary Search Tree Value - in progress
 Easy - Binary Tree Right Side View - done
-Easy - Kth Smallest Element in a BST - done but can be optimized
-Easy - Populating Next Right Pointers in Each Node II - done but can be optimized
-Easy - Diameter of Binary Tree - done
+Easy - Kth Smallest Element in a BST - done
+Easy - Populating Next Right Pointers in Each Node II - done
 Easy - Lowest Common Ancestor of a Binary Tree
+Easy - Diameter of Binary Tree - done
 Medium - Binary Tree Maximum Path Sum - done
 Medium - Serialize and Deserialize Binary Tree - in progress
 Medium - Binary Tree Vertical Order Traversal - in progress
@@ -192,6 +192,7 @@ Hard - Longest Valid Parentheses
 
 **Design**
 
+Easy - Min Stack
 Medium - LRU Cache
 Medium - Design HashMap
 Medium - Insert Delete GetRandom O(1)

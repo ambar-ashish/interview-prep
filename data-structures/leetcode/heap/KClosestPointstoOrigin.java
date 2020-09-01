@@ -1,5 +1,6 @@
 package heap;
 
+import java.util.Arrays;
 import java.util.PriorityQueue;
 
 //LC-973
@@ -14,7 +15,7 @@ public class KClosestPointstoOrigin {
             return points;
 
         PriorityQueue<int[]> heap=new PriorityQueue<>
-                ((p1,p2) -> getDistance(p1) - getDistance(p2));
+                ((p1,p2) -> getDistanceFromOrigin(p1) - getDistanceFromOrigin(p2));
 
         for(int[] point:points)
             heap.offer(point);
@@ -25,8 +26,25 @@ public class KClosestPointstoOrigin {
         return result;
     }
 
-    private int getDistance(int[] point) {
+    private int getDistanceFromOrigin(int[] point) {
         return point[0] * point[0] + point[1] * point[1];
+    }
+
+    //
+    public int[][] kClosestUsingArray(int[][] points, int K) {
+        if(points.length == 0){
+            return new int[0][0];
+        }
+        if(K > points.length){
+            return points;
+        }
+        Arrays.sort(points, ((p1, p2) -> getDistanceFromOrigin(p1) - getDistanceFromOrigin(p2)));
+        int[][] output = new int[K][2];
+        for(int i=0; i<K;i++){
+            output[i][0] = points[i][0];
+            output[i][1] = points[i][1];
+        }
+        return output;
     }
 
     //Quick Select can be one of the other solutions

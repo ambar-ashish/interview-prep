@@ -7,6 +7,8 @@ import java.util.List;
 //LC-350
 public class IntersectionofTwoArraysII {
 
+    //Time Complexity - O(nlogn + mlogm)
+    //Space Complexity - O(n+m)
     public int[] intersect(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);
         Arrays.sort(nums2);
@@ -26,7 +28,8 @@ public class IntersectionofTwoArraysII {
             }
         }
         int[] ret = new int[list.size()];
-        for(int k = 0; k < list.size();k++) ret[k] = list.get(k);
+        for(int k = 0; k < list.size();k++)
+            ret[k] = list.get(k);
         return ret;
     }
 }

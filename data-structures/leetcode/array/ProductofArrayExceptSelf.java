@@ -3,19 +3,29 @@ package array;
 //LC-238
 public class ProductofArrayExceptSelf {
 
-    //Using division when 0 is not present in the array
-    public int[] productExceptSelfUsingDivision(int[] nums) {
-        int n = nums.length;
-        int[] output = new int[n];
+    //Time Comlexity - O(N)
+    //Space Complexity - O(N)
+    public int[] productExceptSelfSubOptimalSolution(int[] nums) {
+        if(nums.length == 0){
+            return nums;
+        }
+        int[] left = new int[nums.length];
+        int[] right = new int[nums.length];
 
-        int total = 1;
-        for(int i=0; i<n; i++){
-            total *= nums[i];
+        left[0] = 1;
+        for(int i=1; i<nums.length; i++){
+            left[i] = nums[i-1] * left[i-1];
         }
-        for(int i=0; i<n; i++){
-            output[i] = total / nums[i];
+
+        right[nums.length-1] = 1;
+        for(int i=nums.length-2; i>=0; i--){
+            right[i] = nums[i+1] * right[i+1];
         }
-        return output;
+
+        for(int i=0; i<nums.length; i++){
+            left[i] = left[i] * right[i];
+        }
+        return left;
     }
 
     //Time Complexity - O(N)
@@ -29,10 +39,10 @@ public class ProductofArrayExceptSelf {
             output[i] = output[i-1] * nums[i-1];
         }
 
-        int r = 1;
+        int right = 1;
         for(int i=n-1; i>=0; i--){
-            output[i] = output[i] * r;
-            r = r * nums[i];
+            output[i] = output[i] * right;
+            right = right * nums[i];
         }
         return output;
     }

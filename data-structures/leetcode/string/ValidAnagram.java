@@ -14,8 +14,8 @@ public class ValidAnagram {
             result[s.charAt(i) - 'a']++;
             result[t.charAt(i) - 'a']--;
         }
-        for(int i = 0; i<result.length; i++){
-            if(result[i] != 0){
+        for(int i : result){
+            if(i != 0){
                 return false;
             }
         }

@@ -19,8 +19,7 @@ public class SearchinRotatedSortedArrayII {
                 }else{
                     end = mid - 1;
                 }
-            }else if(nums[start] > nums[mid]){
-                //right part is rotated
+            }else if(nums[start] > nums[mid]){//right part is sorted
                 //target is in rotated part
                 if(target < nums[mid] || target > nums[end]){
                     end = mid -1;
@@ -30,7 +29,7 @@ public class SearchinRotatedSortedArrayII {
             }else{
                 //duplicates, we know nums[mid] != target, so nums[start] != target
                 //based on current information, we can only move left pointer to skip one cell
-                //thus in the worest case, we would have target: 2, and array like 11111111, then
+                //thus in the worst case, we would have target: 2, and array like 11111111, then
                 //the running time would be O(n)
                 start ++;
             }

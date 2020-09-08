@@ -6,19 +6,24 @@ public class MaxConsecutiveOnesIII {
     //Time Complexity - O(N)
     //Space Complexity - O(1)
     public int longestOnes(int[] A, int K) {
-        int left = 0, right;
-        for (right = 0; right < A.length; right++) {
-            // If we included a zero in the window we reduce the value of K.
-            // Since K is the maximum zeros allowed in a window.
-            if (A[right] == 0) K--;
-            // A negative K denotes we have consumed all allowed flips and window has
-            // more than allowed zeros, thus increment left pointer by 1 to keep the window size same.
-            if (K < 0) {
-                // If the left element to be thrown out is zero we increase K.
-                if (A[left] == 0) K++;
-                left++;
+        int zeroCount = 0;// zero count in current window
+        int start = 0;// slow pointer
+        int res = 0;
+        for(int end=0;end<A.length;end++){
+            if(A[end] == 0){// move forward j, if current is 0, increase the zeroCount
+                zeroCount++;
             }
+            // when current window has more than K, the window is not valid any more
+            // we need to loop the slow pointer until the current window is valid
+            if(zeroCount > K){
+                if(A[start] == 0){
+                    zeroCount--;
+                }
+                start++;
+            }
+            // everytime we get here, the current window is valid
+            res=Math.max(res,end-start+1);
         }
-        return right - left;
+        return res;
     }
 }

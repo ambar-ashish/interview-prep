@@ -6,11 +6,17 @@ import java.util.HashMap;
 public class FractiontoRecurringDecimal {
 
     public String fractionToDecimal(int num, int den) {
+
         if(num==0) return "0";
+
         StringBuilder res = new StringBuilder();
 
         // Negative sign is appended if either of num or den is negative
-        res.append((num > 0) ^ (den > 0) ? "-" : "");
+        String sign = "";
+        if(num < 0 && den > 0 || num > 0 && den < 0){
+            sign = "-";
+        }
+        res.append(sign);
 
         // Get rid of signs and convert to long to prevent overflow
         long n = Math.abs((long) num);

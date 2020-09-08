@@ -2,6 +2,7 @@ package string;
 
 import java.util.LinkedList;
 
+//LC-3
 public class LongestSubstringWithoutRepeatingCharacters {
 
     public int lengthOfLongestSubstring(String s) {

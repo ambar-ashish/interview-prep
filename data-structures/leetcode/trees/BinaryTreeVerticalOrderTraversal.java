@@ -14,10 +14,12 @@ public class BinaryTreeVerticalOrderTraversal {
         }
     }
 
+    //Time Complexity - O(N)
+    //Space Complexity - O(N)
     public List<List<Integer>> verticalOrder(TreeNode root) {
         TreeMap<Integer, List<Integer>> map = new TreeMap<>();
-        List<List<Integer>> res = new ArrayList<>();
-        if (root == null) return res;
+        if (root == null)
+            return new ArrayList<>();
         Queue<Node> q = new LinkedList<>();
         q.offer(new Node(root, 0));
 
@@ -34,10 +36,6 @@ public class BinaryTreeVerticalOrderTraversal {
                 q.offer(new Node(cur.root.right, cur.hd + 1));
             }
         }
-
-        for (List<Integer> value : map.values()) {
-            res.add(value);
-        }
-        return res;
+        return new ArrayList<>(map.values());
     }
 }

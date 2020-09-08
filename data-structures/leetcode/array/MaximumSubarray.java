@@ -7,14 +7,13 @@ public class MaximumSubarray {
     //Time Complexity - O(N)
     //Space Complexity - O(1)
     public int maxSubArray(int[] nums) {
-        int n = nums.length;
-        int currSum = nums[0], maxSum = nums[0];
-
-        for(int i = 1; i < n; ++i) {
-            currSum = Math.max(nums[i], currSum + nums[i]);
-            maxSum = Math.max(maxSum, currSum);
+        int max = nums[0];
+        int currentSum = nums[0];
+        for(int i=1; i<nums.length; i++){
+            currentSum = Math.max(currentSum + nums[i], nums[i]);
+            max = Math.max(currentSum, max);
         }
-        return maxSum;
+        return max;
     }
 
     //Kadane's algo

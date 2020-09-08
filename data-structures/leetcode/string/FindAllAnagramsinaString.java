@@ -6,7 +6,7 @@ import java.util.List;
 //LC-438
 public class FindAllAnagramsinaString {
 
-    //Time Complexity - O(Ns * Np)
+    //Time Complexity - O(Ns + Np)
     //Space Complexity - O(1)
     public List<Integer> findAnagrams(String s, String p) {
         List<Integer> list = new ArrayList();

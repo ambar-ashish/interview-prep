@@ -5,6 +5,8 @@ import java.util.List;
 
 public class BinaryTreePaths {
 
+    //Time Complexity - O(N)
+    //Space Complexity - O(N)
     public List<String> binaryTreePaths(TreeNode root) {
         LinkedList<String> paths = new LinkedList();
         construct_paths(root, "", paths);

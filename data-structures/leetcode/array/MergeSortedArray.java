@@ -15,7 +15,14 @@ public class MergeSortedArray {
         while(p1 >= 0 && p2 >=0){
             // compare two elements from nums1 and nums2
             // and add the largest one in nums1
-            nums1[p--] = nums1[p1] > nums2[p2] ? nums1[p1--] : nums2[p2--];
+            if(nums1[p1] > nums2[p2]){
+                nums1[p] = nums1[p1];
+                p1--;
+            }else{
+                nums1[p] = nums2[p2];
+                p2--;
+            }
+            p--;
         }
         // add missing elements from nums2
         for(int i=0 ; i<=p2; i++){

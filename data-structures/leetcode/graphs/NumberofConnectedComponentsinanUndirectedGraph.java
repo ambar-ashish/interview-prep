@@ -21,9 +21,9 @@ public class NumberofConnectedComponentsinanUndirectedGraph {
 
         HashSet<Integer> visited = new HashSet<>();
         int count = 0;
-        for (Map.Entry<Integer, List<Integer>> entry : map.entrySet()) {
-            if (visited.add(entry.getKey())) {
-                dfs(entry.getKey(), map, visited);
+        for (Integer value : map.keySet()) {
+            if (visited.add(value)) {
+                dfs(value, map, visited);
                 count++;
             }
         }

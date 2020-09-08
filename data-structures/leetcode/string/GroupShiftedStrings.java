@@ -10,12 +10,10 @@ public class GroupShiftedStrings {
 
     public List<List<String>> groupStrings(String[] strings) {
         Map<String, List<String>> map = new HashMap<>();
-
         for(String s : strings) {
             String key = getKey(s);
-            List<String> list = map.getOrDefault(key, new ArrayList<>());
-            list.add(s);
-            map.put(key, list);
+            map.putIfAbsent(key, new ArrayList<>());
+            map.get(key).add(s);
         }
         return new ArrayList<>(map.values());
     }
@@ -26,7 +24,7 @@ public class GroupShiftedStrings {
         for(int i = 1; i < chars.length; i++) {
             int diff = chars[i] - chars[i-1];
             key += diff < 0 ? diff + 26 : diff;
-            key += ",";
+            key += "#";
         }
         return key;
     }

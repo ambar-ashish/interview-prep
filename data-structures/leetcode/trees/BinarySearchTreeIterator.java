@@ -3,7 +3,6 @@ package trees;
 import java.util.Stack;
 
 //LC-173
-//Need to understand this better
 public class BinarySearchTreeIterator {
 
     Stack<TreeNode> stack =  null ;
@@ -25,9 +24,11 @@ public class BinarySearchTreeIterator {
             stack.push(current);
             current = current.left ;
         }
-        TreeNode t = stack.pop() ;
-        current = t.right ;
-        return t.val ;
+        TreeNode temp = stack.pop() ;
+        current = temp.right ;
+        return temp.val ;
     }
 }
 //the idea is same as using stack to do Binary Tree Inorder Traversal
+//Time Complexity - O(H)
+//Space Complexity - O(H)

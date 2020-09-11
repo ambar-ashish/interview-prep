@@ -26,7 +26,8 @@ public class FractiontoRecurringDecimal {
         res.append(n/d);
 
         n %= d;
-        if(n==0) return res.toString();// Cause there is no fraction
+        if(n==0)
+            return res.toString();// Cause there is no fraction
 
         // Append the fraction
         res.append(".");

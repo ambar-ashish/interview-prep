@@ -16,7 +16,7 @@ public class PartitionEqualSubsetSum {
         return canPartitionRecursive(dp, num, sum / 2, 0);
     }
 
-    private boolean canPartitionRecursive(Boolean[][] dp, int[] num, int sum, int                                                    currentIndex) {
+    private boolean canPartitionRecursive(Boolean[][] dp, int[] num, int sum, int currentIndex) {
         // base check
         if (sum == 0)
             return true;
@@ -37,7 +37,6 @@ public class PartitionEqualSubsetSum {
             // recursive call after excluding the number at the currentIndex
             dp[currentIndex][sum] = canPartitionRecursive(dp, num, sum, currentIndex + 1);
         }
-
         return dp[currentIndex][sum];
     }
 }

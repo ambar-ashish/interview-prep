@@ -4,25 +4,22 @@ package array;
 public class MissingElementinSortedArray {
 
     // Return how many numbers are missing until nums[idx]
-    int missing(int idx, int[] nums) {
-        return nums[idx] - nums[0] - idx;
-    }
-
+    // Simple One Pass
     public int missingElement(int[] nums, int k) {
         int n = nums.length;
-        // If kth missing number is larger than
-        // the last element of the array
-        if (k > missing(n - 1, nums))
-            return nums[n - 1] + k - missing(n - 1, nums);
+        for (int i = 1; i < n; i++) {
+            int missingNum = nums[i] - nums[i-1] - 1;
+            if (k <= missingNum)
+                return nums[i-1] + k;
+            k = k - missingNum;
+        }
+        return nums[n-1] + k;
+    }
 
-        int idx = 1;
-        // find idx such that
-        // missing(idx - 1) < k <= missing(idx)
-        while (missing(idx, nums) < k)
-            idx++;
-
-        // kth missing number is greater than nums[idx - 1]
-        // and less than nums[idx]
-        return nums[idx - 1] + k - missing(idx - 1, nums);
+    public static void main(String[] args) {
+        MissingElementinSortedArray solution = new MissingElementinSortedArray();
+        int[] nums = {4,7,9,10};
+        int k = 1;
+        System.out.println(solution.missingElement(nums, k));
     }
 }

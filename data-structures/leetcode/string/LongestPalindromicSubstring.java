@@ -6,7 +6,8 @@ public class LongestPalindromicSubstring {
     //Time Complexity - O(N^2)
     //Space Complexity - O(1)
     public String longestPalindrome(String s) {
-        if (s == null || s.length() < 1) return "";
+        if (s == null || s.length() < 1)
+            return "";
         int start = 0, end = 0;
         for (int i = 0; i < s.length(); i++) {
             int len1 = expandAroundCenter(s, i, i);
@@ -21,11 +22,10 @@ public class LongestPalindromicSubstring {
     }
 
     private int expandAroundCenter(String s, int left, int right) {
-        int L = left, R = right;
-        while (L >= 0 && R < s.length() && s.charAt(L) == s.charAt(R)) {
-            L--;
-            R++;
+        while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
+            left--;
+            right++;
         }
-        return R - L - 1;
+        return right - left - 1;
     }
 }

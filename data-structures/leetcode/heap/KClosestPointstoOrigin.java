@@ -30,8 +30,9 @@ public class KClosestPointstoOrigin {
         return point[0] * point[0] + point[1] * point[1];
     }
 
-    //
-    public int[][] kClosestUsingArray(int[][] points, int K) {
+    //Time Complexity: O(NlogN)
+    //Space Complexity: O(1)
+    public int[][] kClosestUsingArrayBruteForce(int[][] points, int K) {
         if(points.length == 0){
             return new int[0][0];
         }
@@ -46,7 +47,5 @@ public class KClosestPointstoOrigin {
         }
         return output;
     }
-
-    //Quick Select can be one of the other solutions
 
 }

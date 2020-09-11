@@ -7,7 +7,7 @@ public class SmallestSubtreewithalltheDeepestNodes {
     TreeNode res = null;
 
     //First Root to Leaf: return the deep level of every node
-    //Then Leaf to Root: only when the its left node and right node both have the deepthest level, update the result node
+    //Then Leaf to Root: only when the its left node and right node both have the deepest level, update the result node
     public TreeNode subtreeWithAllDeepest(TreeNode root) {
         dfs(root, 0);
         return res;

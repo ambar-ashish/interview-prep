@@ -10,7 +10,8 @@ public class BasicCalculatorII {
         char opr = '+';
         Stack<Integer> stack = new Stack<Integer>();
         for(char chr : (s + "+").toCharArray()) {
-            if(chr == ' ')continue;
+            if(chr == ' ')
+                continue;
             if(Character.isDigit(chr)) {
                 num = num * 10 + (chr - '0');
             } else {
@@ -34,7 +35,14 @@ public class BasicCalculatorII {
                 opr = chr;
             }
         }
-        while(!stack.isEmpty())res += stack.pop();
+        while(!stack.isEmpty())
+            res += stack.pop();
         return res;
+    }
+
+    public static void main(String[] args) {
+        BasicCalculatorII calculatorII = new BasicCalculatorII();
+        String s = "3-2*2";
+        System.out.println(calculatorII.calculate(s));
     }
 }

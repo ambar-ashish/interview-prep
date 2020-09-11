@@ -1,5 +1,6 @@
 package heap;
 
+import java.util.Arrays;
 import java.util.PriorityQueue;
 
 //LC-215
@@ -21,6 +22,13 @@ public class KthLargestElementInArray {
         }
 
         return heap.poll();
+    }
+
+    //Time Complexity - O(NlogN)
+    //Space Complexity - O(1)
+    public int findKthLargestBruteForce(int[] nums, int k) {
+        Arrays.sort(nums);
+        return nums[nums.length-k];
     }
 
     //Quick Select solution should also be done for O(N) time complexity

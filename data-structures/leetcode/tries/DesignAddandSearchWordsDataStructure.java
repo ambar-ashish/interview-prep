@@ -9,20 +9,18 @@ public class DesignAddandSearchWordsDataStructure {
     class TrieNode {
         Map<Character, TrieNode> children = new HashMap();
         boolean word = false;
-        public TrieNode() {}
     }
 
-    TrieNode trie;
+    TrieNode root;
 
     /** Initialize your data structure here. */
     public DesignAddandSearchWordsDataStructure() {
-        trie = new TrieNode();
+        root = new TrieNode();
     }
 
     /** Adds a word into the data structure. */
     public void addWord(String word) {
-        TrieNode node = trie;
-
+        TrieNode node = root;
         for (char ch : word.toCharArray()) {
             if (!node.children.containsKey(ch)) {
                 node.children.put(ch, new TrieNode());
@@ -32,9 +30,15 @@ public class DesignAddandSearchWordsDataStructure {
         node.word = true;
     }
 
+    /** Returns if the word is in the data structure. A word could contain the dot character '.'
+     * to represent any one letter. */
+    public boolean search(String word) {
+        return searchInNode(word, root);
+    }
+
     /** Returns if the word is in the node. */
     public boolean searchInNode(String word, TrieNode node) {
-        for (int i = 0; i < word.length(); ++i) {
+        for (int i = 0; i < word.length(); i++) {
             char ch = word.charAt(i);
             if (!node.children.containsKey(ch)) {
                 // if the current character is '.'
@@ -57,10 +61,5 @@ public class DesignAddandSearchWordsDataStructure {
             }
         }
         return node.word;
-    }
-
-    /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */
-    public boolean search(String word) {
-        return searchInNode(word, trie);
     }
 }

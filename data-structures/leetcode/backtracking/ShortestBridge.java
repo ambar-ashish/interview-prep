@@ -49,6 +49,11 @@ public class ShortestBridge {
                 int x = curPoint[0];
                 int y = curPoint[1];
 
+                // once we find the second island, return current bridge value
+                if (x > 0 && A[x - 1][y] == 1 || x < n - 1 && A[x + 1][y] == 1
+                        || y > 0 && A[x][y - 1] == 1 || y < m - 1 && A[x][y + 1] == 1) {
+                    return bridge;
+                }
                 // WARNING: CANNOT use if else statement, must use all if statement to check all four directions
                 if (x > 0 && A[x - 1][y] == 0) {
                     queue.offer(new int[]{x - 1, y});
@@ -65,11 +70,6 @@ public class ShortestBridge {
                 if (y < m - 1 && A[x][y + 1] == 0) {
                     queue.offer(new int[]{x, y + 1});
                     A[x][y + 1] = 2;
-                }
-                // once we find the second island, return current bridge value
-                if (x > 0 && A[x - 1][y] == 1 || x < n - 1 && A[x + 1][y] == 1
-                        || y > 0 && A[x][y - 1] == 1 || y < m - 1 && A[x][y + 1] == 1) {
-                    return bridge;
                 }
             }
             bridge++;

@@ -16,3 +16,6 @@ public class ClosestBinarySearchTreeValue {
         return closest;
     }
 }
+
+//n a balanced BST O(h) = O(logN), however the problem doesn't state that it's a balanced BST
+// thus O(h) is more accurate

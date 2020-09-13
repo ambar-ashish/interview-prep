@@ -23,4 +23,5 @@ public class DiameterofBinaryTree {
 }
 
 //Time Complexity - O(N) since we are visiting each node
-//Space complexity - O(N) the size of the implicit call stack during the DFS
+//Space complexity - O(N) the size of the implicit call stack during the DFS; worst case when tree is skewed
+//otherwise space complexity will be O(H)

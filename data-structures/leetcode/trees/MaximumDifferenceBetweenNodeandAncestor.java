@@ -3,19 +3,21 @@ package trees;
 //LC-1026
 public class MaximumDifferenceBetweenNodeandAncestor {
 
-    int res = 0;
+    int result = 0;
+
     public int maxAncestorDiff(TreeNode root) {
-        if (root == null) return 0;
         dfs(root, root.val, root.val);
-        return res;
+        return result;
     }
 
-    private void dfs(TreeNode node, int min, int max) {
-        if (node == null) return;
-        min = Math.min(node.val, min);
-        max = Math.max(node.val, max);
-        res = Math.max(res, max - min);
-        dfs(node.left, min, max);
-        dfs(node.right, min, max);
+    //Maintain a min and max seen so far as we explore the tree in DFS fashion.
+    // At every node, we can update the result by comparing it with min and max.
+    private void dfs(TreeNode curr, int max, int min) {
+        if (curr != null) {
+            result = Math.max(result, Math.abs(max - curr.val));
+            result = Math.max(result, Math.abs(min - curr.val));
+            dfs(curr.left, Math.max(max, curr.val), Math.min(min, curr.val));
+            dfs(curr.right, Math.max(max, curr.val), Math.min(min, curr.val));
+        }
     }
 }

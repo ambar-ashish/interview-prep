@@ -31,4 +31,27 @@ public class MergeIntervals {
         }
         return result.toArray(new int[result.size()][]);
     }
+
+    //My solution
+    public int[][] mergeMySolvedSolution(int[][] intervals) {
+        if(intervals.length == 0){
+            return intervals;
+        }
+        Arrays.sort(intervals, (a,b) -> a[0] - b[0]);
+        List<int[]> list = new ArrayList();
+        list.add(intervals[0]);
+        for(int i=1; i<intervals.length; i++){
+            int[] prev = list.get(list.size() - 1);
+            if(prev[1] >= intervals[i][0]){
+                prev[1] = Math.max(prev[1], intervals[i][1]);
+            }else{
+                list.add(intervals[i]);
+            }
+        }
+        int[][] out = new int[list.size()][2];
+        for(int i=0; i<list.size(); i++){
+            out[i] = list.get(i);
+        }
+        return out;
+    }
 }

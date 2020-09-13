@@ -11,19 +11,24 @@ public class KClosestPointstoOrigin {
     //The advantage of this solution is it can deal with real-time(online) stream data.
     //It does not have to know the size of the data previously.
     public int[][] kClosest(int[][] points, int K) {
-        if(K>=points.length)
+        if(points.length == 0){
             return points;
+        }
+        PriorityQueue<int[]> maxHeap = new PriorityQueue<>((p1,p2) ->
+                getDistanceFromOrigin(p2) - getDistanceFromOrigin(p1));
 
-        PriorityQueue<int[]> heap=new PriorityQueue<>
-                ((p1,p2) -> getDistanceFromOrigin(p1) - getDistanceFromOrigin(p2));
+        for(int i=0; i<points.length; i++){
+            maxHeap.add(points[i]);
+            if(maxHeap.size() > K){
+                maxHeap.remove();
+            }
+        }
 
-        for(int[] point:points)
-            heap.offer(point);
-
-        int[][] result=new int[K][2];
-        for(int i=0;i<K;i++)
-            result[i]=heap.poll();
-        return result;
+        int[][] output = new int[K][2];
+        for(int i=K-1; i>=0;i--){
+            output[i] = maxHeap.poll();
+        }
+        return output;
     }
 
     private int getDistanceFromOrigin(int[] point) {

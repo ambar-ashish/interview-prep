@@ -61,7 +61,7 @@ public class ValidNumber {
                 if (i == n - 1)
                     return false;
                 // sign can appear in the middle only when e appears in front
-                if (i > 0 && !(s.charAt(i-1)=='e'||s.charAt(i-1)=='E'))
+                if (i > 0 && !(s.charAt(i-1)=='e' || s.charAt(i-1)=='E'))
                     return false;
                 signCount++;
             }

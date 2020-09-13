@@ -3,7 +3,8 @@ package trees;
 //LC-236
 public class LowestCommonAncestorofaBinaryTree {
 
-    //Need to understand this better
+    //Time Complexity - O(N)
+    //Space Complexity - O(H)
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null || root == p || root == q)
             // found p or q or touch the ground

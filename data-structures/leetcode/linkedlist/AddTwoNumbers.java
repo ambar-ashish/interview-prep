@@ -27,25 +27,22 @@ public class AddTwoNumbers {
             l2 = l2.next;
         }
 
-        if(l1 == null){
-            while(l2 != null){
-                int value = (l2.val + carry) % 10;
-                carry = (l2.val + carry) / 10;
-                head.next = new ListNode(value);
-                head = head.next;
-                l2 = l2.next;
-            }
+        while(l2 != null){
+            int value = (l2.val + carry) % 10;
+            carry = (l2.val + carry) / 10;
+            head.next = new ListNode(value);
+            head = head.next;
+            l2 = l2.next;
         }
 
-        if(l2 == null){
-            while(l1 != null){
-                int value = (l1.val + carry) % 10;
-                carry = (l1.val + carry) / 10;
-                head.next = new ListNode(value);
-                head = head.next;
-                l1 = l1.next;
-            }
+        while(l1 != null){
+            int value = (l1.val + carry) % 10;
+            carry = (l1.val + carry) / 10;
+            head.next = new ListNode(value);
+            head = head.next;
+            l1 = l1.next;
         }
+
         if(carry == 1){
             head.next = new ListNode(carry);
         }

@@ -13,17 +13,15 @@ public class KthSmallestElementinaBST {
         Stack<TreeNode> stack = new Stack();
         TreeNode curr = root;
         while (!stack.empty() || curr != null) {//while(true) can be used and remove last return statement
-            if (curr != null) {
+            while(curr != null){
                 stack.push(curr);
                 curr = curr.left;
-            } else {
-                curr = stack.pop();
-                k--;
-                if (k == 0) {
-                    return curr.val;
-                }
-                curr = curr.right;
             }
+            curr = stack.pop();
+            if(--k == 0){
+                return curr.val;
+            }
+            curr = curr.right;
         }
         return Integer.MIN_VALUE;
     }

@@ -3,35 +3,38 @@ package trees;
 //LC-765
 public class SmallestSubtreewithalltheDeepestNodes {
 
-    /*Looks intuitive
+    //Intuitive solution
     public TreeNode subtreeWithAllDeepest(TreeNode root) {
-        return height(root).getValue();
+        if(root == null){
+            return null;
+        }
+        int leftDepth = getDepth(root.left);
+        int rightDepth = getDepth(root.right);;
+
+        if(leftDepth == rightDepth){
+            return root;
+        }else{
+            if(leftDepth > rightDepth){
+                return subtreeWithAllDeepest(root.left);
+            }else{
+                return subtreeWithAllDeepest(root.right);
+            }
+        }
     }
 
-    private Pair<Integer, TreeNode> height(TreeNode root) {
-        if (root == null)
-            return new Pair(0, null);
-
-        Pair<Integer, TreeNode> left = height(root.left);
-        Pair<Integer, TreeNode> right = height(root.right);
-
-        int leftHeight = left.getKey();
-        int rightHeight = right.getKey();
-        if (leftHeight == rightHeight) {
-            return new Pair(leftHeight + 1, root);
-        } else if (leftHeight < rightHeight) {
-            return new Pair(rightHeight + 1, right.getValue());
-        } else {
-            return new Pair(leftHeight + 1, left.getValue());
+    private int getDepth(TreeNode root) {
+        if(root == null){
+            return 0;
         }
-    }*/
+        return 1 + Math.max(getDepth(root.left), getDepth(root.right));
+    }
 
     int deepestLevel = 0;
     TreeNode res = null;
 
     //First Root to Leaf: return the deep level of every node
     //Then Leaf to Root: only when the its left node and right node both have the deepest level, update the result node
-    public TreeNode subtreeWithAllDeepest(TreeNode root) {
+    public TreeNode subtreeWithAllDeepestOtherSolution(TreeNode root) {
         dfs(root, 0);
         return res;
     }

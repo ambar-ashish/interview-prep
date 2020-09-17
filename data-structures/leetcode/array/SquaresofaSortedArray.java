@@ -5,6 +5,25 @@ import java.util.Arrays;
 //LC-977
 public class SquaresofaSortedArray {
 
+    public int[] sortedSquaresMySolution(int[] A) {
+        int n = A.length;
+        int[] out = new int[n];
+        int i = 0, j = n - 1, k = n - 1;
+        while(i < j){
+            if(A[i]*A[i] >= A[j]*A[j]){
+                out[k--] = A[i] * A[i];
+                i++;
+            }else{
+                out[k--] = A[j] * A[j];
+                j--;
+            }
+        }
+        if(i==j){
+            out[0] = A[i] * A[i];
+        }
+        return out;
+    }
+
     //Time Complexity - O(NlogN)
     //Space Complexity - O(1)
     public int[] sortedSquares(int[] A) {

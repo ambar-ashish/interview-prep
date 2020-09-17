@@ -23,13 +23,14 @@ public class FindFirstandLastPositionofElementinSortedArray {
 
         while (start <= end) {
             int mid = start + (end - start) / 2;
+            if(nums[mid] == target)
+                idx = mid;
             if (target < nums[mid] || (first && target == nums[mid])) {
                 end = mid-1;
             }
             else {
                 start = mid+1;
             }
-            if(nums[mid] == target) idx = mid;
         }
         return idx;
     }

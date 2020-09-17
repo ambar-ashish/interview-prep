@@ -48,10 +48,6 @@ public class MergeIntervals {
                 list.add(intervals[i]);
             }
         }
-        int[][] out = new int[list.size()][2];
-        for(int i=0; i<list.size(); i++){
-            out[i] = list.get(i);
-        }
-        return out;
+        return list.toArray(new int[][]{});
     }
 }

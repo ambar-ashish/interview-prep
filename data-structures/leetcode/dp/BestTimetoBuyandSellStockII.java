@@ -3,20 +3,21 @@ package dp;
 //LC-122
 public class BestTimetoBuyandSellStockII {
 
+    //Time Complexity - O(N)
+    //Space Complexity - O(1)
     public int maxProfit(int[] prices) {
-        int i = 0;
-        int valley = prices[0];
-        int peak = prices[0];
-        int maxprofit = 0;
-        while (i < prices.length - 1) {
-            while (i < prices.length - 1 && prices[i] >= prices[i + 1])
+        int i = 0, buy, sell, profit = 0, N = prices.length - 1;
+        while (i < N) {
+            while (i < N && prices[i + 1] <= prices[i]) // find next local minimum
                 i++;
-            valley = prices[i];
-            while (i < prices.length - 1 && prices[i] <= prices[i + 1])
+            buy = prices[i];
+
+            while (i < N && prices[i + 1] > prices[i]) // find next local maximum
                 i++;
-            peak = prices[i];
-            maxprofit += peak - valley;
+            sell = prices[i];
+
+            profit += sell - buy;
         }
-        return maxprofit;
+        return profit;
     }
 }

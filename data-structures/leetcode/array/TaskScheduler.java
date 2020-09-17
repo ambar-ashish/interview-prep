@@ -6,25 +6,26 @@ import java.util.Arrays;
 public class TaskScheduler {
 
     public int leastInterval(char[] tasks, int n) {
+        int[] freq = new int[26];
         // frequencies of the tasks
-        int[] frequencies = new int[26];
-        for (int t : tasks) {
-            frequencies[t - 'A']++;
+        for(char task : tasks){
+            freq[task - 'A']++;
+        }
+        Arrays.sort(freq);
+
+        //Max frequency
+        int fmax = freq[25];
+
+        int idleTime = (fmax-1) * n;
+
+        for(int i=freq.length - 2; i>=0; i--){
+            idleTime =  idleTime - Math.min(fmax-1, freq[i]);
         }
 
-        Arrays.sort(frequencies);
-
-        // max frequency
-        int f_max = frequencies[25];
-        int idle_time = (f_max - 1) * n;
-
-        for (int i = frequencies.length - 2; i >= 0 && idle_time > 0; i--) {
-            idle_time -= Math.min(f_max - 1, frequencies[i]);
+        if(idleTime > 0){
+            return idleTime + tasks.length;
+        }else{
+            return tasks.length;
         }
-        if(idle_time > 0)
-        {
-            return idle_time + tasks.length;
-        }
-        return tasks.length;
     }
 }

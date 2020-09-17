@@ -7,10 +7,10 @@ public class MissingElementinSortedArray {
     // Simple One Pass
     public int missingElement(int[] nums, int k) {
         int n = nums.length;
-        for (int i = 1; i < n; i++) {
-            int missingNum = nums[i] - nums[i-1] - 1;
+        for (int i = 0; i < n-1; i++) {
+            int missingNum = nums[i+1] - nums[i] - 1;
             if (k <= missingNum)
-                return nums[i-1] + k;
+                return nums[i] + k;
             k = k - missingNum;
         }
         return nums[n-1] + k;

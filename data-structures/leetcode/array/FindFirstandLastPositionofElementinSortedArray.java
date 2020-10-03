@@ -27,8 +27,7 @@ public class FindFirstandLastPositionofElementinSortedArray {
                 idx = mid;
             if (target < nums[mid] || (first && target == nums[mid])) {
                 end = mid-1;
-            }
-            else {
+            } else {
                 start = mid+1;
             }
         }

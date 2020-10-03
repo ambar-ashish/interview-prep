@@ -8,8 +8,8 @@ LBs are kind of reverse proxy sitting between client and server and acting on be
 LBs can be between client and nodes or in between nodes and databases.
 LBs can route requests geographically.
 
-LBs can store IPs and port ranges mapping with backend server to store which request is coming from which range to then route the request accordingly.
-
+LBs can store IPs and port ranges mapping with backend server to store which request is coming from which range 
+then route the request accordingly.
 
 **2. What is reverse proxy?**
 

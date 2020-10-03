@@ -21,7 +21,8 @@ Sharding is of 2 types: Algorithm based and User Defined Sharding(preferred).
 
 Example:
 
-We can partition the database using the userId/requestId of the user. We can have 7 partitions from userID from A-D, then E-F.. and so on.
+-> We can partition the database using the userId/requestId of the user. 
+   We can have 7 partitions from userID from A-D, then E-F.. and so on.
 In this way we are reducing the load of each partition.
 Consistency with this sharding is required.
 

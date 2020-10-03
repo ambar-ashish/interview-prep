@@ -28,7 +28,8 @@ public class IsGraphBipartite {
         while (!queue.isEmpty()) {
             int from = queue.poll();
             for (int to : graph[from]) {
-                if (color[to] == color[from]) return false;
+                if (color[to] == color[from])
+                    return false;
                 if (color[to] == -1) {
                     color[to] = 1 - color[from]; // Handle opposite colors
                     queue.offer(to);

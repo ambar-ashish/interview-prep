@@ -28,11 +28,7 @@ public class VerifyinganAlienDictionary {
                 return false;
             }
         }
-        if(word1.length() <= word2.length()){
-            return true;
-        }else{
-            return false;
-        }
+        return word1.length() <= word2.length();
     }
 
     public static void main(String[] args) {

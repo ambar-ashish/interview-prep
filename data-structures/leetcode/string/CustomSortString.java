@@ -11,7 +11,7 @@ public class CustomSortString {
         for(char ch: T.toCharArray()){
             arr[ch-'a']++;
         }
-        // append S  chars at the right order as many times as they appear in T
+        // append S chars at the right order as many times as they appear in T
         StringBuilder sb = new StringBuilder();
         for(char ch: S.toCharArray()){
             while(arr[ch-'a']>0){

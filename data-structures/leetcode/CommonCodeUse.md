@@ -101,4 +101,4 @@ iteration over HashMap keys
 for(int i : map.keySet())
 
 iteration over HashMap values
-for(int i : map.keySet())
+for(int i : map.values())

@@ -31,17 +31,15 @@ public class BinaryTreeInorderTraversal {
         if(root == null)
             return list;
         Stack<TreeNode> stack = new Stack();
-        while(true){
-            if(root != null){
-                stack.push(root);
-                root = root.left;
-            }else{
-                if(stack.isEmpty())
-                    break;
-                root = stack.pop();
-                list.add(root.val);
-                root = root.right;
+        TreeNode curr = root;
+        while(!stack.isEmpty() || curr != null){
+            while(curr != null){
+                stack.push(curr);
+                curr = curr.left;
             }
+            curr = stack.pop();
+            list.add(curr.val);
+            curr = curr.right;
         }
         return list;
     }

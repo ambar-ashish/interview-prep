@@ -5,61 +5,56 @@ import java.util.*;
 //LC-863
 public class AllNodesDistanceKinBinaryTree {
 
-    HashMap<TreeNode, TreeNode> parent;
+    Map<TreeNode, List<TreeNode>> map = new HashMap();
+////Method : use HashMap
+////1. build a undirected graph using treenodes as vertices, and the parent-child relation as edges
+////2. do BFS with source vertice (target) to find all vertices with distance K to it.
+//here can also use Map<TreeNode, TreeNode> to only store the child - parent mapping, since parent-child mapping is inherent in the tree structure
 
-    //Time complexity - O(N)
-    //Space Complexity - O(N)
     public List<Integer> distanceK(TreeNode root, TreeNode target, int K) {
-        parent = new HashMap();
-        //First create the child-parent Map
-        dfs(root, null);
+        List<Integer> res = new ArrayList<Integer> ();
+        if (root == null || K < 0)
+            return res;
 
-        Queue<TreeNode> queue = new LinkedList();
-        queue.add(null);
-        queue.add(target);
+        buildMap(root, null);
+        if (!map.containsKey(target))
+            return res;
 
-        HashSet<TreeNode> seen = new HashSet();
-        seen.add(target);
-        seen.add(null);
-
-        int dist = 0;
-        //Normal BFS done in Graphs()
-        while (!queue.isEmpty()) {
-            TreeNode node = queue.poll();
-            if (node == null) {
-                if (dist == K) {
-                    List<Integer> ans = new ArrayList();
-                    for (TreeNode n: queue)
-                        ans.add(n.val);
-                    return ans;
-                }
-                queue.offer(null);
-                dist++;
-            } else {
-                if (!seen.contains(node.left)) {
-                    seen.add(node.left);
-                    queue.offer(node.left);
-                }
-                if (!seen.contains(node.right)) {
-                    seen.add(node.right);
-                    queue.offer(node.right);
-                }
-                TreeNode par = parent.get(node);
-                if (!seen.contains(par)) {
-                    seen.add(par);
-                    queue.offer(par);
+        Set<TreeNode> visited = new HashSet<TreeNode>();
+        Queue<TreeNode> q = new LinkedList<TreeNode>();
+        q.add(target);
+        visited.add(target);
+        while (!q.isEmpty()) {
+            int size = q.size();
+            if (K == 0) {
+                for (int i = 0; i < size ; i++)
+                    res.add(q.poll().val);
+                return res;
+            }
+            for (int i = 0; i < size; i++) {
+                TreeNode node = q.poll();
+                for (TreeNode next : map.get(node)) {
+                    if (visited.contains(next)) continue;
+                    visited.add(next);
+                    q.add(next);
                 }
             }
+            K--;
         }
-
-        return new ArrayList<Integer>();
+        return res;
     }
 
-    public void dfs(TreeNode node, TreeNode par) {
-        if (node != null) {
-            parent.put(node, par);
-            dfs(node.left, node);
-            dfs(node.right, node);
+    private void buildMap(TreeNode node, TreeNode parent) {
+        if (node == null)
+            return;
+        if (!map.containsKey(node)) {
+            map.put(node, new ArrayList<TreeNode>());
+            if (parent != null)  {
+                map.get(node).add(parent);
+                map.get(parent).add(node) ;
+            }
+            buildMap(node.left, node);
+            buildMap(node.right, node);
         }
     }
 }

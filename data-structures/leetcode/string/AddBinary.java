@@ -25,7 +25,6 @@ public class AddBinary {
         if (carry > 0) {
             sb.insert(0, 1);
         }
-        List<String> list = new ArrayList();
         return sb.toString();
     }
 

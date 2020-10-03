@@ -24,7 +24,8 @@ public class MultiplyStrings {
         StringBuilder sb = new StringBuilder();
         boolean seen = false;
         for (char c : res) {
-            if (c == '0' && !seen) continue;
+            if (c == '0' && !seen)
+                continue;
             sb.append(c);
             seen = true;
         }

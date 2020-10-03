@@ -2,118 +2,125 @@
 
 **Number**
 
-Easy - Add Binary - done
-Easy - Add Strings - done
+FB - Easy - Plus One - done
+FB - Easy - Add Binary - done
+FB - Easy - Add Strings - done
 Easy - Multiply Strings - in progress
-Easy - Convert a Number to Hexadecimal - in progress
-Medium - Fraction to Recurring Decimal - in progress
-Hard - Valid Number - need to understand
+Medium - String to Integer (atoi) - in progress
+Medium - Validate IP Address - in progress
+Medium - Basic Calculator II - done
+FB - Medium - Fraction to Recurring Decimal - done
+FB - Hard - Valid Number - done IMPORTANT
 
 **String**
 
+FB - Easy - Palindrome Permutation - done
 Easy - Valid Anagram - done
 Easy - Group Anagrams - done
-Easy - Find All Anagrams in a String - done
-Easy - Verifying an Alien Dictionary - done
-Easy - Reorder Data in Log Files - in progress - in progress
-Easy - Buddy Strings - in progress
-Easy - Read N Characters Given Read4 - in progress
-Medium - Read N Characters Given Read4 II - Call multiple times - in progress
-Medium - Group Shifted Strings - in progress
-Medium - String to Integer (atoi)
-Medium - One Edit Distance
-Medium - Validate IP Address
-Medium - Minimum Remove to Make Valid Parentheses
-Medium - Custom Sort String
-Medium - Basic Calculator II
+FB  - Easy - Find All Anagrams in a String - done
+FB - Easy - Verifying an Alien Dictionary - done
+Easy - Reorder Data in Log Files - in progress
+FB - Easy - Buddy Strings - done
+FB - Easy - Read N Characters Given Read4 - done
+FB - Medium - Group Shifted Strings - done
+Medium - One Edit Distance - done
+FB - Medium - Minimum Remove to Make Valid Parentheses - done
+FB - Medium - Custom Sort String - done
+Medium - Permutation in String - done
+Hard - Read N Characters Given Read4 II - Call multiple times - in progress
 
 **Pallindromes**
 
-Easy - Valid Palindrome - done
-Easy - Valid Palindrome II - done
+FB - Easy - Valid Palindrome - done
+FB - Easy - Valid Palindrome II - done
 Medium - Valid Palindrome III - done sub-optimally, need to understand and work on the DP solution
-Medium - Longest Palindromic Substring - in progress
-
-**Two pointers/Sliding window**
-
-Easy - Remove Duplicates from Sorted Array - in progress
-Easy - Move Zeroes - done
-Easy - Squares of a Sorted Array - done
-Medium - Longest Substring Without Repeating Characters - done
-Medium - Permutation in String - done
-Hard - Longest Substring with At Most K Distinct Characters
-Hard - Minimum Window Substring
-Hard - Trapping Rain Water
+Medium - Longest Palindromic Substring - done
 
 **Array**
 
-Easy - Product of Array Except Self - in progress
+FB - Easy - Product of Array Except Self - done
 Easy - Find Peak Element - done
 Easy - Leftmost Column with at Least a One - done
-Easy - Rotate Array - done
+FB - Easy - Rotate Array - done
 Easy - Find First and Last Position of Element in Sorted Array - done but can be optimized
 Easy - Intersection of Two Arrays - done
-Easy - Merge Sorted Array - in progress
+FB - Easy - Merge Sorted Array - done
 Easy - Monotonic Array - done
 Easy - Two Sum - done
-Medium - 3Sum
+Medium - 3Sum - in progress - used Two sum and make solution generic
 Medium - Intersection of Two Arrays II - done
-Medium - Sparse Matrix Multiplication 
-Medium - Maximum Swap
-Medium - Missing Element in Sorted Array
-Medium - Random Pick Index
-Medium - Task Scheduler
+Medium - Sparse Matrix Multiplication - in progress
+Medium - Maximum Swap - in progress
+Medium - Missing Element in Sorted Array - done
+Medium - Random Pick Index - in progress
+FB - Medium - Task Scheduler - done
 Hard - Median of Two Sorted Arrays
 
+**Two pointers/Sliding window**
+
+FB - Easy - Find an index of maximum occurring element with equal probability(GFG)
+Easy - Remove Duplicates from Sorted Array - done
+FB - Easy - Move Zeroes - done
+Easy - Squares of a Sorted Array - done
+FB - Medium - Max Consecutive Ones III - done
+Medium - Longest Substring Without Repeating Characters - done
+FB - Hard - Minimum Window Substring - in progress
+Hard - Longest Substring with At Most K Distinct Characters
+Hard - Trapping Rain Water - in progress
+
 **SubArray**
-Easy - Maximum Subarray - in progress
-Medium - Maximum Product Subarray - in progress
-Medium - Subarray Sum Equals K - in progress
-Medium - Continuous Subarray Sum - in progress
-Medium - Minimum Size Subarray Sum - need to work on it
+
+FB - Easy - Maximum Subarray - done
+Medium - Maximum Product Subarray - done
+FB - Medium - Subarray Sum Equals K - done
+FB - Medium - Continuous Subarray Sum - done 
 
 **Binary Search**
 
-Easy - First Bad Version - done
-Easy - Search in Rotated Sorted Array - in progress
-Medium - Search in Rotated Sorted Array II - in progress
-Medium - Pow(x, n) 
-Medium - Divide Two Integers
-
-**Linked List**
-
-Medium - Merge k Sorted Lists - done
-Medium - Palindrome Linked List - done but can be optimized
-Medium - Odd even linked list
-Medium - Remove Nth Node From End of List - in progress
-Medium - Add Two Numbers - done 
-Medium - Merge Two Sorted Lists - done
-Medium - Copy List with Random Pointer
-Medium - Reorder List
+FB - Easy - First Bad Version - done
+FB - Easy - Search in Rotated Sorted Array - done
+FB - Medium - Search in Rotated Sorted Array II - done
+FB - Medium - Pow(x, n) - in progress 
+Medium -  Divide Two Integers
 
 **Stack/Queue**
 
-Medium - Exclusive Time of Functions
+FB - Easy - Valid Parentheses - done
+FB - Simplify Path - done
+FB - Medium - Exclusive Time of Functions - in progress
+
+**Linked List**
+
+FB - Easy - Remove Duplicates from Sorted List - done
+Medium - Merge k Sorted Lists - done
+Medium - Palindrome Linked List - done but can be optimized
+Medium - Odd even linked list - done
+Medium - Remove Nth Node From End of List - done
+Medium - Add Two Numbers - done 
+Medium - Merge Two Sorted Lists - done
+Medium - Copy List with Random Pointer - in progress
+Medium - Reorder List - done suboptimally, need to work on the optimal solution
 
 **Trees**
 
-Easy - Closest Binary Search Tree Value - in progress
+FB - Easy - Binary Tree Level Order Traversal - done
+FB - Easy - Closest Binary Search Tree Value - done
 Easy - Binary Tree Right Side View - done
-Easy - Kth Smallest Element in a BST - done
+FB - Easy - Kth Smallest Element in a BST - done
 Easy - Populating Next Right Pointers in Each Node II - done
-Easy - Lowest Common Ancestor of a Binary Tree
+FB - Easy - Lowest Common Ancestor of a Binary Tree - done
 Easy - Diameter of Binary Tree - done
-Medium - Binary Tree Maximum Path Sum - done
-Medium - Serialize and Deserialize Binary Tree - in progress
-Medium - Binary Tree Vertical Order Traversal - in progress
-Medium - Binary Search Tree Iterator
-Medium - Range Sum of BST
-Medium - Maximum Difference Between Node and Ancestor
-Medium - Validate Binary Search Tree
-Medium - Flatten Binary Tree to Linked List
-Medium - Binary Tree Paths
-Medium - Convert Binary Search Tree to Sorted Doubly Linked List
-Medium - Smallest Subtree with all the Deepest Nodes
+FB - Medium - Binary Tree Maximum Path Sum - done
+FB - Medium - Serialize and Deserialize Binary Tree - done
+Medium - Binary Tree Vertical Order Traversal - done
+Medium - Binary Search Tree Iterator - done
+FB - Medium - Range Sum of BST - done
+Medium - Validate Binary Search Tree - done
+FB - Medium - Binary Tree Paths - done
+Medium - Maximum Difference Between Node and Ancestor - done
+FB - Medium - Smallest Subtree with all the Deepest Nodes - done
+Medium - Flatten Binary Tree to Linked List - in progress
+Medium - Convert Binary Search Tree to Sorted Doubly Linked List - in progress
 
 **Backtracking**
 
@@ -121,69 +128,77 @@ Easy - Number of Islands - done
 Easy - Flood Fill - done
 Easy - Word Search - done
 Easy - Rotting Oranges - done
-Easy - Word ladder - in progress
+Easy - Island Perimeter - done
+Easy - Word ladder -
 Medium - Letter Combinations of a Phone Number
 Medium - Permutations
 Medium - Permutations II
-Medium - Shortest Bridge
+FB - Medium - Shortest Bridge - in progress
+FB - Medium - Combination Sum
 Medium - Subsets
 Medium - Strobogrammatic Number II
 Medium - Accounts Merge
-Medium - Nested List Weight Sum
-Hard - Remove Invalid Parentheses
+Medium - Nested List Weight Sum - done
+FB - Hard - Remove Invalid Parentheses
 Hard - Expression Add Operators
 Hard - Shortest Distance from All Buildings
 Hard - Regular Expression Matching
-Hard - Longest Increasing Path in a Matrix
+FB - Hard - Longest Increasing Path in a Matrix
+FB - Hard - Sudoku Solver
 
 **Heap**
 
-Easy - K Closest Points to Origin - done but need to work on Quick Select solution
+FB - Easy - K Closest Points to Origin - done
 Easy - Top K Frequent Elements - done
 Easy - Top K Frequent Words - done
-Easy - Kth Largest Element in an Array - done but can be optimized
+Easy - Kth Largest Element in an Array - done 
+Easy - Kth Largest Element in a Stream - done
+Hard - Find Median from Data Stream
 
 **Graphs**
 
-Easy - Clone Graph - done
-Easy - Is Graph Bipartite?
-Medium - Number of Connected Components in an Undirected Graph
-Medium - Course Schedule 
-Hard - Alien Dictionary
+FB - Easy - Clone Graph - done
+FB - Medium - Number of Connected Components in an Undirected Graph - done
+FB - Medium - Is Graph Bipartite - done
+FB - Medium - Course Schedule - in progress
+FB - Hard - Alien Dictionary
 
-**Intervals**
+**Intervals**`
 
 Easy - Meeting Rooms - done
 Medium - Meeting Rooms II - done
-Medium - Merge Intervals - in progress
-Medium - Interval List Intersections - in progress
-Hard - Insert Interval - in progress
-Hard - Employee Free Time - in progress
+FB - Medium - Merge Intervals - done
+FB - Medium - Interval List Intersections - done
+FB - Hard - Insert Interval - done
+FB - Hard - Employee Free Time - done
 
 **Trie**
 
 Medium - Implement Trie (Prefix Tree) - done
-Medium - Design Add and Search Words Data Structure - in progress
+FB - Medium - Design Add and Search Words Data Structure - done
 Medium - Stream of Characters - in progress
 
 **Random**
 
 Easy - Integer to Roman - in progress
-Easy - Roman to Integer - in progress
+Easy - Roman to Integer - done
+Medium - Random Pick with Weight
 Hard - Integer to English Words - in progress
-Random Pick with Weight
 
 **Bit Manipulation**
 
-Easy - Number of 1 Bits - in progress
+FB - Easy - Convert a Number to Hexadecimal - done
+Easy - Number of 1 Bits - done
 Easy - Number Complement - in progress
 Easy - Complement of Base 10 Integer - 
 
 **Dynamic Programming**
 
-Easy - Best Time to Buy and Sell Stock
-Medium - Longest Palindromic Substring
-Medium - Partition Equal Subset Sum
+FB - Easy - Best Time to Buy and Sell Stock - done
+FB - Easy - Best Time to Buy and Sell Stock II - done
+FB - Hard - Best Time to Buy and Sell Stock III - 
+FB - Hard - Best Time to Buy and Sell Stock IV - 
+FB - Medium - Partition Equal Subset Sum - in progress
 Medium - Decode Ways
 Medium - Word Break
 Medium - Range Sum Query 2D - Immutable
@@ -192,10 +207,10 @@ Hard - Longest Valid Parentheses
 
 **Design**
 
-Easy - Min Stack
-Medium - LRU Cache
-Medium - Design HashMap
-Medium - Insert Delete GetRandom O(1)
+Easy - Min Stack - done
+Medium - LRU Cache - in progress
+Medium - Design HashMap - in progress
+FB - Medium - Insert Delete GetRandom O(1) - in progress
 
 **Things to work on**
 
@@ -205,10 +220,10 @@ Medium - Insert Delete GetRandom O(1)
 4. QuickSelect - Find kth largest element in an array
 5. Top 5 Greedy Questions
 
-**Greedy Problems**
+ Minimum Add to Make Parentheses Valid
+ Check Completeness of a Binary Tree
+ All Nodes Distance K in Binary Tree
+ Number of Music Playlists
 
-Gas Station
-Maximum Subarray
-Super Washing Machines
 
 

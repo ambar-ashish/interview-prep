@@ -29,7 +29,7 @@ public class GroupAnagrams {
     public List<List<String>> groupAnagrams(String[] strs) {
         if (strs.length == 0)
             return new ArrayList();
-        Map<String, List> ans = new HashMap();
+        Map<String, List<String>> ans = new HashMap();
         int[] count = new int[26];
         for (String s : strs) {
             Arrays.fill(count, 0);

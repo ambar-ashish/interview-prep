@@ -18,9 +18,12 @@ How is IP address is assigned to any machine connected the internet?
 -->
 
 DNS:
-The process of DNS resolution involves converting a hostname (such as www.example.com) into a computer-friendly IP address (such as 192.168.1.1).
-An IP address is given to each device on the Internet, and that address is necessary to find the appropriate Internet device - like a street address is used to find a particular home. 
-When a user wants to load a webpage, a translation must occur between what a user types into their web browser (example.com) and the machine-friendly address necessary to locate the example.com webpage.
+The process of DNS resolution involves converting a hostname (such as www.example.com) into a computer-friendly IP address 
+(such as 192.168.1.1).
+An IP address is given to each device on the Internet, and that address is necessary to find the appropriate Internet device -
+like a street address is used to find a particular home. 
+When a user wants to load a webpage, a translation must occur between what a user types into their web browser (example.com) 
+and the machine-friendly address necessary to locate the example.com webpage.
 
 HTTP:
 way to send info to server. It sends a bunch of bytes in packets. The request will contain the client IP address as well.
@@ -49,7 +52,7 @@ IP packets are limited in size, 2^16 bytes which in MB are very very less
 
 TCP is meant to send IP packets in an ordered way and there is guarantee that all the packets will be received.
 If any packet gets corrupted during communication there we will get to know in TCP and can be resent.
-Extra TCP header will contain more data related to ordering and evreything else.
+Extra TCP header will contain more data related to ordering and everything else.
 
 When a client tries to connect with server using TCP then it first it tries to create a TCP connection using handshake.
 
@@ -107,7 +110,7 @@ A key-value store is a flexible NoSQL database that is used often for caching an
 Ex: DynamoDB, Redis, Zookeeper
 
 Zookeeper is strongly consistent, highly available key-value store. Its often used to store important configuration or to perform
-leader elecntion.
+leader election.
 Redis is an in-memory key-value store used for persistent storage.Redis is also used for rate-limiting.
 
 Peer-to-Peer network:
@@ -115,8 +118,8 @@ A collection of machines referred to as peers that divide a workload between the
 that would otherwise be possible. This network is often used in file-distribution networks.
 
 Gossip protocol:
-When a set of machines talk to each other in an uncoordinated manner in a cluster to spread info through a system without requiring
-a central source of data.
+When a set of machines talk to each other in an uncoordinated manner in a cluster to spread info through a system without 
+requiring a central source of data.
 
 Polling:
 The act of fetching a resource or piece od data regularly at an interval to make sure your data is not too stale.
@@ -126,7 +129,7 @@ In networking, it usually refers to the act of continuously getting feed of info
 the two machines or process.
 
 Rate limiting:
-The act of limiting the number of requests sent to of from a system.
+The act of limiting the number of requests sent to or from a system.
 
 Publish/Subscribe Pattern:
 Publishers publish messages to topics/channels and subscriber subscribes to these topics and read messages coming through these topics.
@@ -135,11 +138,14 @@ Idempotent operations:
 An operation that has the same ultimate outcome regardless of now many times its performed.
 
 MapReduce:
-A popular framework for processing very large datasets in a distributed setting efficiently, quickly and in a fault-tolerant manner.
+A popular framework for processing very large datasets in a distributed setting efficiently, quickly and in a fault-tolerant 
+manner.
 3 steps:
 a. the Map step which runs a map function on various chunks of dataset and transforms into key-value pairs.
-b. the Shuffle step re-organizes the intermediate key-value pairs such that the pairs of the same key are routed to the same machine in the final step.
-c. the Reduce step, which runs a reduce function on the newly shuffled key-value pairs and transforms them into more meaningful data.
+b. the Shuffle step re-organizes the intermediate key-value pairs such that the pairs of the same key are routed to the 
+same machine in the final step.
+c. the Reduce step, which runs a reduce function on the newly shuffled key-value pairs and transforms them into more
+meaningful data.
 
 Replication:
 The act of duplicating the data from one database server to others. 
@@ -153,8 +159,9 @@ c. Sharding based on the hash of a column(only for structured data)
 
 Example:
 Lets say you have a sharded database and you want equal probability of request goings to these shards.
-So what we you can do is have a reverse proxy in between application server and these shards. And the application servers acts as
-a client which will connect to this reverse proxy and this reverse proxy will have the hashing logic of sending the request to these shards.
+So what we you can do is have a reverse proxy in between application server and these shards. And the application servers 
+acts as a client which will connect to this reverse proxy and this reverse proxy will have the hashing logic of sending 
+the request to these shards.
 
 Hot spot:
 When distributing a workload across a set of servers, that workload might be spread unevenly. This can happen if your sharding key
@@ -175,7 +182,8 @@ machines. Two popular consensus algorithms are Paxos and Raft.
 A distributed denial-of-service (DDoS) attack is a malicious attempt to disrupt normal traffic of a targeted server, 
 service or network by overwhelming the target or its surrounding infrastructure with a flood of Internet traffic. 
 DDoS attacks achieve effectiveness by utilizing multiple compromised computer systems as sources of attack traffic.
-Sometimes referred to as a layer 7 DDoS attack (in reference to the 7th layer of the OSI model), the goal of these attacks is to exhaust the resources of the target.
+Sometimes referred to as a layer 7 DDoS attack (in reference to the 7th layer of the OSI model), 
+the goal of these attacks is to exhaust the resources of the target.
   
 **XSS Attack**
 
@@ -190,10 +198,11 @@ Vulnerable vehicles that are commonly used for Cross-site Scripting attacks are 
 **How master-slave architecture works**
 
 Master-Slave can be synchronous and asynchronous communication.
-If asynchronous, then less load on master to sync everytime but then master slave will take time to be in sync.
-If synchronous, then more load on master as it need to update slave everytime.
+If asynchronous, then less load on master to sync every time but then master slave will take time to be in sync.
+If synchronous, then more load on master as it needs to update slave every time.
 
-Master-Master looks good and resilient but it can go wrong if their communication is down and hence will start behaving independently.
+Master-Master looks good and resilient but it can go wrong if their communication is down and hence will start 
+behaving independently.
 Hence, we need more masters in the system and hence distributed consensus will come into picture.
 Many types of distributed consensus are there:
 1. 2 phase commit [Understand this protocol as it will make sure master-slave are in sync]
@@ -207,15 +216,20 @@ Why is master-slave required?
 
 **How TCP handshake works?**
 
-THREE-WAY HANDSHAKE or a TCP 3-way handshake is a process which is used in a TCP/IP network to make a connection between the server and client.
-It is a three-step process that requires both the client and server to exchange synchronization and acknowledgment packets before the real data communication process starts.
+THREE-WAY HANDSHAKE or a TCP 3-way handshake is a process which is used in a TCP/IP network to make a connection 
+between the server and client.
+It is a three-step process that requires both the client and server to exchange synchronization and acknowledgment packets 
+before the real data communication process starts.
 
 Three-way handshake process is designed in such a way that both ends help you to initiate, negotiate, and separate TCP socket connections at the same time. 
 It allows you to transfer multiple TCP socket connections in both directions at the same time.
 
-Step 1: In the first step, the client establishes a connection with a server. It sends a segment with SYN and informs the server about the client should start communication, and with what should be its sequence number.
-Step 2: In this step server responds to the client request with SYN-ACK signal set. ACK helps you to signify the response of segment that is received and SYN signifies what sequence number it should able to start with the segments.
-Step 3: In this final step, the client acknowledges the response of the Server, and they both create a stable connection will begin the actual data transfer process.
+Step 1: In the first step, the client establishes a connection with a server. It sends a segment with SYN 
+and informs the server about the client should start communication, and with what should be its sequence number.
+Step 2: In this step server responds to the client request with SYN-ACK signal set. ACK helps you to signify 
+the response of segment that is received and SYN signifies what sequence number it should able to start with the segments.
+Step 3: In this final step, the client acknowledges the response of the Server, and they both create a stable connection 
+will begin the actual data transfer process.
 
 **How SSL works?**
 

@@ -98,7 +98,7 @@ Sentinel performs main 3 tasks:
 
 Redis Cluster is a data sharding solution with automatic management, failover and replication.
 
-**Redis Senntinel vs Cluster**
+**Redis Sentinel vs Cluster**
 
 If you need an automatic failover solution without going to a full cluster solution, then use Sentinel.
 For getting a complete clustering solution which splits your database in between multiple nodes then go for Clustering.

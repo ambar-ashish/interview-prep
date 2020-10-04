@@ -245,3 +245,44 @@ Working:
 -The browser/server checks to see whether or not it trusts the SSL certificate. If so, it sends a message to the web server.
 -The web server sends back a digitally signed acknowledgement to start an SSL encrypted session.
 -Encrypted data is shared between the browser/server and the web server.
+
+**Message Queues**
+
+Asynchronous, it means sender and receiver need not interact with the messaging at the same time.
+
+**Production Issue**
+
+1. Message Queue Overflow- lots of messages are sent to queue but not received
+    How to avoid - Have an alerting mechanism 
+    
+**System Capacity Planning**
+
+1. Ask how much can be the traffic?
+    Example - Total users - 500 million
+              Active users - 2 million
+              Image size = 2kb
+           
+2. Database capacity planning
+    
+**4 fundamental system principles**
+
+1. Security
+2. Availability
+3. latency
+4. Cost
+
+**API Best Practices**
+
+1. APIs should be easy to learn and easy to use.
+2. API should be hard to misuse
+3. API should fail fast
+4. API names should be self-explanatory
+5. API should be split into modules
+6. Maximise information hiding. Dont let information leak in logs, exceptions.
+7. Minimize coupling between APIs
+8. Document as much as possible
+9. Keep performance in mind while API design
+
+**How to distribute the cache**
+
+                      

@@ -1,4 +1,4 @@
-# Load Balancer
+ # Load Balancer
 
 **1. Load Balancer Definition**
 
@@ -18,8 +18,8 @@ Reverse proxies are typically implemented to help increase security, performance
 
 **3. Types of load balancers**
 
-    a. Software LB
-    b. Hardware LB
+    a. Software LB - the LB software can be installed in any servers like AWS EC2
+    b. Hardware LB - sotware is embedded in the specific hardware
 
 Some mechanism should be present so that if node is added/removed, the LB should be able to register the same and send the requests accordingly.
  
@@ -33,7 +33,8 @@ d. Based on performance - LB does a health check for all the servers(how long th
 accordingly LB will redirect the request to better performant server
 e. IP based - Hash the IP address of the client and with this hash value, select the node. 
 This can help in increase cache hit as we can use the same has to select the cache
-f. Using Consistent Hashing - Use requestID from client request and hash this value, then this hash value can be mapped to particular servers.
+f. Using Consistent Hashing - Use requestID from client request and hash this value, 
+    then this hash value can be mapped to particular servers.
  
 **5. How to make sure that LB is not single point of failure and scale load balancers?**
 
@@ -42,7 +43,25 @@ then the DNS query hits either of the Load balancer IPs.
 
 **6. How LB understands to route request to the closest servers or CDN**
 
+**How to handle Session Persistence for same user**
+
+Example : Shopping cart of a user
+maybe use cache
+
+**Production Issues**
+
+1. LB can be a single point of failure hence multiple load balancers replica should be present.
+2. Normal Round robin will not work well if one of the servers goes down or some servers have low memory/capacity
+    (choose weighted round robin)
+3. Cache Overflow
+
 **Load Balancers Layer4 vs Layer 7**
+
+**Major Functions of load balancers**
+
+1. Distributes client request
+2. Ensures high availability(Use heartbeat mechanism if the servers are up or not) 
+3. Provides flexibility to add or remove servers from server farm
 
 **NGINX**
 
@@ -52,6 +71,6 @@ Can be used as:
 2. Backend Routing
 3. Caching
 
-**Varnish HTTP cache**
+
 
 

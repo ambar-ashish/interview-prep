@@ -55,13 +55,23 @@ maybe use cache
     (choose weighted round robin)
 3. Cache Overflow
 
-**Load Balancers Layer4 vs Layer 7**
-
 **Major Functions of load balancers**
 
 1. Distributes client request
 2. Ensures high availability(Use heartbeat mechanism if the servers are up or not) 
 3. Provides flexibility to add or remove servers from server farm
+
+**Load Balancers Layer4 vs Layer 7**
+
+At Layer 4, a load balancer has visibility on network information such as application ports and protocol (TCP/UDP). 
+The load balancer delivers traffic by combining this limited network information with a load balancing algorithm 
+such as round-robin and by calculating the best destination server based on least connections or server response times.
+
+At Layer 7, a load balancer has application awareness and can use this additional application information to make
+more complex and informed load balancing decisions. With a protocol such as HTTP, a load balancer can 
+uniquely identify client sessions based on cookies and use this information to deliver all a clients 
+requests to the same server. This server persistence using cookies can be based on the server’s cookie 
+or by active cookie injection where a load balancer cookie is inserted into the connection.
 
 **NGINX**
 

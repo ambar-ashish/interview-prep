@@ -96,7 +96,7 @@ A server that sits between a client and servers and acts on behalf of client, ty
 Forward proxies are often referred as just proxies.
 
 Reverse Proxy:
-A server that sits between clients and servers and acts on behalf of servers, typically usedfor logging, load balancing and caching.
+A server that sits between clients and servers and acts on behalf of servers, typically used for logging, load balancing and caching.
 
 Nginx : popular webserver that is often used as a reverse proxy and load balancer.
 
@@ -284,5 +284,28 @@ Asynchronous, it means sender and receiver need not interact with the messaging 
 9. Keep performance in mind while API design
 
 **How to distribute the cache**
+
+
+HTTP Protocol:
+
+Example : Hit Url on address bar and click search results
+
+Ajax polling:
+
+Example : Weather update
+
+HTTPS Long Polling:
+
+Client opens up the connection again and again according to the requirement.
+Long polling has timeout and after timeout, client has to resend the request.
+
+WebSockets:
+
+1. Client opens the connection and establishes the connection.(Handshaking)
+2. Once the connection is established, both client and server can transfer data.(Bidirectional)
+
+Example : Chat Apps
+
+
 
                       

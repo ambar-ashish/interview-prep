@@ -40,6 +40,12 @@ The default consistency level is one, unless changed.
 
 Different consistency levels: One, Two, Three, Quorum, Local Quorum and All.
 
+**Data Modelling**
+
+->Cassandra deals with unstructured data.
+->Cassandra has a flexible schema.
+->In Cassandra, a table is a list of “nested key-value pairs”. (ROW x COLUMN key x COLUMN value)
+
 
 
 

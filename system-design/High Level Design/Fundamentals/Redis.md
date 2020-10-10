@@ -22,7 +22,7 @@ Advantages:
 2. Simple and flexible - no need to define rows and columns, no insert, select
 3. Durability - has option to write on disk, can be used as caching system or as full fledged database
 4. Multiple language/Client support
-5. Can be used as a second database to make transations faster
+5. Can be used as a second database to make transactions faster
 6. Redis has a very good master-slave Replication feature
 ---> Master can be write only, one slave can read only and other slave can write data to disk
 7. Redis has a single text file for all the configurations

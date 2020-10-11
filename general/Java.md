@@ -41,7 +41,7 @@ Class is a template and the instance variables are state and methods are behavio
 
 **Equals and HashCode**
 
-Equals method is used to compare teo objects. Two object references are equal only if there are pointing to the same object.
+Equals method is used to compare two objects. Two object references are equal only if there are pointing to the same object.
 If we need to compare 2 objects, we need to override equals and hashcode method in the class.
 
 HashCode are used in hashing to decide which group(Collection like HashMap) an object should be placed into.
@@ -69,7 +69,8 @@ CopyOnWriteArrayList, CopyOnWriteArraySet - Thread safe
 
 **Working of HashMap**
 
-Hashing - transformation of a string of characters to a short fixed length value which can be used for faster indexing and searches.
+Hashing - transformation of a string of characters to a short fixed length value which can be used for faster indexing
+and searches.
 HashMap is an array of nodes.
 Node<K,V>
 - int hash
@@ -84,7 +85,7 @@ HashMap put(){
 }
 
 Collision Resolution Techniques:
-1. Separate Chaining - When 2 or more records hash to the same location, then records are constituted into a
+1. Separate Chaining - When 2 or more records hash to the same location, then records are added into a
    single linked list called a chain.
 2. Open Addressing -
     a. Linear probing

@@ -64,8 +64,13 @@ then DispatcherServlet looks at the handler mapping and then routes accordinly.
 
 **SpringBoot**
 
-It autoconfigures DispatcherServlet, Datasource, EntityManagerfactory or Transation Manager.
+It autoconfigures DispatcherServlet, Datasource, EntityManagerfactory or Transaction Manager.
 Looks at the framework/dependency in classpath and autoconfigures them.(ex: hibernate)
+
+Spring Boot auto-configuration automatically configure a Spring application based on the dependencies 
+present on the classpath. Spring Boot detects classes in the classpath 
+and auto-configuration mechanism will ensure to create and wires necessary beans for us. 
+This is one of the most powerful feature of the Spring Boot and most of the work happens silently in the background.
 
 It is very easy to develop Spring Based applications with Java or Groovy.
 It reduces lots of development time and increases productivity.
@@ -98,6 +103,18 @@ PUT is used to send data to a server to create/update a resource.
 The difference between POST and PUT is that PUT requests are idempotent. 
 That is, calling the same PUT request multiple times will always produce the same result. 
 In contrast, calling a POST request repeatedly have side effects of creating the same resource multiple times.
+
+**How to secure Rest API**
+
+1. Always use HTTPS
+2. Never expose information on URLs - Usernames, passwords, session tokens, and API keys should not appear in the URL, 
+    as this can be captured in web server logs, which makes them easily exploitable.
+3. Basic Auth can be used
+4. The OAuth 2.0 authorization framework enables a third-party application to obtain limited access to an HTTP service,
+    either on behalf of a resource owner by orchestrating an approval interaction between the resource owner 
+    and the HTTP service, or by allowing the third-party application to obtain access on its behalf.
+5. JWT authentication
+6. Rate Limiting        
 
 
 

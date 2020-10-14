@@ -34,7 +34,7 @@ Other solutions were synchronous.
 SAGA is asynchronous. 
 
 Used Queues for this SAGA pattern.
-Different microservices will be required for successfull as well as rollback/timeout scenarios to be handled.  
+Different microservices will be required for successful as well as rollback/timeout scenarios to be handled.  
 
 Sequential events + Local transactions = Isolation  
  

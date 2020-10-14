@@ -133,6 +133,104 @@ public class ClassicSingleton {
    }
 }
 
+**ConcurrentHashMap**
+
+ConcurrentHashMap: It allows concurrent access to the map. 
+Part of the map called Segment (internal data structure) is only getting locked while adding or updating the map. 
+So ConcurrentHashMap allows concurrent threads to read the value without locking at all. 
+This data structure was introduced to improve performance.
+
+A ConcurrentHashMap has internal final class called Segment so we can say that 
+ConcurrentHashMap is internally divided in segments of size 32, 
+so at max 32 threads can work at a time. It means each thread can work on a each segment during high concurrency 
+and atmost 32 threads can operate at max which simply maintains 32 locks to guard each bucket of the ConcurrentHashMap.
+
+**Null as Argument**
+
+public class Test {
+	public static void main(String[] args) {
+		foo(null);
+	}
+	public static void foo(Object o) {
+		System.out.println("Object argument");
+	}
+	public static void foo(String s) {
+		System.out.println("String argument");
+	}
+}
+
+Explanation of Null Argument Tricky Question
+
+According to Java specs, in case of overloading, the compiler picks the most specific function. 
+Obviously String class is more specific than Object class, hence it will print “String argument”.
+
+public static void foo(StringBuffer i){
+	System.out.println("StringBuffer impl");
+}
+
+In this case, the Java compiler will throw an error as “The method foo(String) is ambiguous for the type Test”.
+
+**Long L**
+
+long longWithL = 1000*60*60*24*365L;
+long longWithoutL = 1000*60*60*24*365;
+System.out.println(longWithL);
+System.out.println(longWithoutL);
+
+the output of the code snippet will be:
+
+31536000000
+1471228928
+We are explicitly creating the first variable as long by adding an “L” suffix. So the compiler 
+will treat it as long and assign it to the first variable.
+
+For the second statement, the compiler will perform the calculation and treat it as a 32-bit integer. 
+Since the output is outside the range of integer max value (2147483647), 
+the compiler will truncate the most significant bits and then assign it to the variable.
+
+**Can you override a private or static method in Java?**
+
+Another popular Java tricky question, As I said method overriding is a good topic to ask trick questions in Java.
+Anyway, you can not override a private or static method in Java.
+
+**No, you can not access a non-static variable from the static context in Java. 
+If you try, it will give compile time error.**
+
+**Integer**
+
+public class Demo{ 
+    public static void main(String[] arr){ 
+        Integer num1 = 100; 
+        Integer num2 = 100; 
+        Integer num3 = 500; 
+        Integer num4 = 500; 
+          
+        if(num1==num2){ 
+            System.out.println("num1 == num2"); 
+        } 
+        else{ 
+            System.out.println("num1 != num2"); 
+        } 
+        if(num3 == num4){ 
+            System.out.println("num3 == num4"); 
+        } 
+        else{ 
+            System.out.println("num3 != num4"); 
+        } 
+    } 
+} 
+
+Answer: b)num1 == num2
+                  num3 != num4
+Reason: We always thought that whenever two object references are compared using “==”, it always evaluates to “false”.
+ But here Integer caching changes the results.Integer class has a caching range of -128 to 127. 
+ Whenever a number is between this range and autoboxing is used, it assigns the same reference. 
+ That’s why for value 100, both num1 and num2 will have the same reference, 
+ but for the value 500 (not in the range of -128 to 127), num3 and num4 will have different reference.
+
+
+
+
 
 
  

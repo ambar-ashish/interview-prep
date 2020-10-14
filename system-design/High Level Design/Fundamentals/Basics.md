@@ -40,7 +40,7 @@ TCP: Transmission Control protocol
 Allows for ordered, reliable data delivery between machines over the public internet by creating a connection.
 
 HTTP: Hyper Text Transmission Protocol
-implemented over the top of TCP. Clients make HTTP requests and server responds with a response.HTTP
+implemented over the top of TCP. Clients make HTTP requests and server responds with a response.
 
 IP packet:
 smallest unit used to describe data being sent over IP. The IP packet consists of:

@@ -18,9 +18,8 @@ as well as inside the data center.
 
 1. Coding standards for Listeners, Constants values, properties etc.
 2. Separation of Concerns
-3. Object Oriented COde
+3. Object Oriented Code
 4. Standard Libraries
 5. JUnits and TDD
 6. Sonarqube and Coverity 
 7. Pipeline with Automated Component Test Cases, Integration Test Cases
-8. 

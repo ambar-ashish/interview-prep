@@ -31,7 +31,7 @@ Each service can have their own database (Polyglot persistence)
 3. RDBMS - Payment systems, reporting
 4. Graph Databases - Social Data, Recommendations
 
-Disavantage of multiple Databases in Microservice architecture:
+Disadvantages of multiple Databases in Microservice architecture:
 1. Joins are not easy at all
 
 Advantages:
